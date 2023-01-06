@@ -1,0 +1,32 @@
+:root {
+    --myfont:Verdana, Arial, Tahoma;
+}
+
+
+body {
+    font-family: var(--myfont);
+    max-width: 500px;
+    margin: 1.25rem auto;
+}
+header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color:lightgrey;
+    border-radius: 1px;
+ }
+
+ header img {
+    max-width: 200px;
+ }
+
+ h1 {
+    padding-left: 8px;
+ }
+
+ footer {
+    text-align: center;
+    background-color:lightgrey;
+    border-radius: 1px;
+ }
