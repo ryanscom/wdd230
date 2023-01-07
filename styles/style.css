@@ -5,7 +5,7 @@
 
 body {
     font-family: var(--myfont);
-    max-width: 500px;
+    max-width: 520px;
     margin: 1.25rem auto;
 }
 header {
@@ -14,19 +14,23 @@ header {
     justify-content: center;
     align-items: center;
     background-color:lightgrey;
-    border-radius: 1px;
+    border-radius: 15px;
+    padding: 20px;
+    
  }
 
  header img {
     max-width: 200px;
+    border-radius: 15px;
+    box-shadow: 20px;
  }
 
  h1 {
-    padding-left: 8px;
+    padding-left: 20px;
  }
 
  footer {
     text-align: center;
     background-color:lightgrey;
-    border-radius: 1px;
+    border-radius: 15px;
  }
