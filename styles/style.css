@@ -1,6 +1,6 @@
-:root {
+/* :root {
     --myfont:Verdana, Arial, Tahoma;
-}
+} */
 
 
 body {
@@ -33,4 +33,5 @@ header {
     text-align: center;
     background-color:lightgrey;
     border-radius: 15px;
+    padding: 3px;
  }
