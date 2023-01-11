@@ -1,7 +1,8 @@
-/* :root {
-    --myfont:Verdana, Arial, Tahoma;
-} */
+:root {
+    --myfont:'Roboto', 'Sofia Sans', sans-serif;
+}
 
+h1, h2, h3, body, footer{ font-family: var(--myfont); }
 
 body {
     font-family: var(--myfont);
@@ -9,29 +10,29 @@ body {
     margin: 1.25rem auto;
 }
 header {
-    display: flex;
+    
     text-align: center;
     justify-content: center;
     align-items: center;
     background-color:lightgrey;
-    border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
     
  }
 
  header img {
     max-width: 200px;
-    border-radius: 15px;
-    box-shadow: 20px;
  }
 
  h1 {
-    padding-left: 20px;
- }
+    padding-left: 10px;
+    font-size: 1.5rem;
+  }
+  h2 {
+   font-size: 1rem;
+  }
 
  footer {
     text-align: center;
     background-color:lightgrey;
-    border-radius: 15px;
     padding: 3px;
  }
