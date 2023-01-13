@@ -2,17 +2,14 @@
 
   @media only screen and (min-width: 32.5em) {
     
-   
     header {
         display: flex;
         border-radius: 15px;
-        padding: 20px;
-        
+        padding: 20px; 
      }
     
      header img {
         border-radius: 15px;
-        box-shadow: 20px;
      }
     
      h1 {
@@ -25,7 +22,6 @@
      }
     
      footer {
-        
         border-radius: 15px;
      }
   }
