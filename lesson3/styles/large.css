@@ -9,4 +9,9 @@
       font-size: 32px;
       text-shadow: 2px 3px 0px black;
   }
+
+  main {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
 }
