@@ -27,4 +27,10 @@
     align-items: center;
     justify-content: center;
   }
+
+  main {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
 }
