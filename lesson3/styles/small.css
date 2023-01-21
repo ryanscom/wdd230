@@ -159,19 +159,19 @@ a:hover {
 
 .colorblocks:nth-child(1){
    background-color: var(--black);
-   color: var(--white-ish);
+   color: var(--white);
 }
 .colorblocks:nth-child(2){
    background-color: var(--darkgrey);
-   color: var(--white-ish);
+   color: var(--white);
 }
 .colorblocks:nth-child(3){
    background-color: var(--grey);
-   color: var(--white-ish);
+   color: var(--white);
 }
 .colorblocks:nth-child(4){
    background-color: var(--darkgreen);
-   color: var(--white-ish);
+   color: var(--white);
 }
 .colorblocks:nth-child(5){
    background-color: var(--green);
