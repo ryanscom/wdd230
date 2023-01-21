@@ -1,3 +1,12 @@
-@media only screen and (min-width: 65em) {
+@media only screen and (min-width: 65em){
+
+  nav ul {
+    margin-top: -22px;
+ }
   
+  header h1 {
+      padding: 40px;
+      font-size: 32px;
+      text-shadow: 2px 3px 0px black;
   }
+}
