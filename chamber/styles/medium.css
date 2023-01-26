@@ -53,15 +53,8 @@
  }
   
  #call-to-action {
-    border: thin solid var(--darkgrey);
-    background-color: var(--white);
-    margin-top: 0px;
-    /* max-height: max-content; */
-    height: 200px;
       grid-column-start: 1;
       grid-column-end: 3;
-    /* grid-row-start: 1;
-    grid-row-end: 3; */
  }
  
  #event1 {
@@ -70,7 +63,6 @@
     grid-column-end: 2;
     grid-row-start: 5;
     grid-row-end: 5;
-
  }
  
  #weather {
@@ -82,11 +74,6 @@
  }
  
  #news {
-    border: thin solid var(--darkgrey); 
-    background-color: var(--white);
-    margin-top: 5px;
-    margin-bottom: 5px;
-    height: 200px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -96,9 +83,6 @@
  #spotlight-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: thin solid var(--darkgrey); 
-    background-color: var(--extralightgreen);
-    padding: 5px 5px 5px 5px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
@@ -106,17 +90,11 @@
  }
  
  #spotlight1 {
-    border: thin solid var(--darkgrey);
-    background-color: var(--white);
     margin: 0px 2.5px 0px 2.5px;
-    height: 200px;
  }
  
  #spotlight2 {
-    border: thin solid var(--darkgrey); 
-    background-color: var(--white);
     margin: 0px 0px 0px 2.5px;
-    height: 200px;
  }
 
  #join {
