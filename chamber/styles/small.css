@@ -25,29 +25,58 @@ header {
    background-image: linear-gradient(to right, var(--black), var(--grey));
    display: flex;
    margin: auto;
-   border-bottom: 1px solid var(--green);
+   border-bottom: 4px solid var(--lightgreen);
 }
 
-header h1 {
+header button{
+   position: absolute;
+   background-color: transparent;
+   color: white;
+   font-size: 1.5rem;
+   border: none;
+   /* padding: 5px 30px 30px 0px */
+   margin: 5px 20px 20px 5px;
+}
+
+header h1{
    font-family: var(--robo);
-   /* background-image: linear-gradient(to right, var(--black), var(--grey)); */
-   /* padding: 20px; */
    background-color: transparent;
    color: white;
    text-align: center;
    letter-spacing: 0.05em;
-   font-size: 24px;
+   font-size: 20px;
+   margin-top: 25px;
+   margin-bottom: 0%;
    /* margin-top: -1px; */
    /* border-bottom: var(--green);
    border-left: var(--black);
    border-right: var(--darkgrey);
    border-style: solid;
    border-width: thin; */
-   margin: auto;
+   /* margin: auto;
    padding: auto;
    height: 100%;
-   width: 100%;
+   width: 100%; */
 }
+
+header h2{
+   font-family: var(--robo);
+   background-color: transparent;
+   color: white;
+   text-align: center;
+   letter-spacing: 0.05em;
+   font-size: 12px;
+   margin-top: 0%;
+   margin-bottom: 10px;
+}
+
+header div p{
+   color: var(--white);
+   text-align: center;
+   margin-top: 0%;
+   font-size: 12px;
+}
+
 
 nav {
    background-color: var(--darkgrey);
@@ -70,7 +99,7 @@ nav ul {
    margin: 0;
 }
 
-nav button:hover {
+header button:hover {
       background-color: rgba(0,0,0,0.2);
       color: #fff;
 }
@@ -91,6 +120,56 @@ nav ul.open{
    display: block
 }
 
+.social-wrapper{
+   display: block;
+   align-self: center;
+
+}
+
+header img{
+   max-width: 110px;
+   max-height: 110px;
+   /* width: auto;
+   height: auto; */
+}
+
+header div img{
+   max-width: 32px;
+   max-height: 32px;
+   /* width: auto;
+   height: auto; */
+}
+
+header div img:nth-child(1){
+   padding: 10px 2.5px 2.5px 2.5px;
+}
+
+header div img:nth-child(2){
+   padding: 10px 5px 2.5px 2.5px;
+}
+
+header div img:nth-child(3){
+   padding: 2.5px 2.5px 5px 2.5px;
+}
+
+header div img:nth-child(4){
+   padding: 2.5px 5px 5px 2.5px;
+}
+
+#title-container{
+   display: block;
+   width: 100%;
+}
+
+/* header h1{
+   padding: 15px 0px 0px -15px;
+} */
+
+/* header h2{
+   padding: 15px;
+} */
+
+
 #hamburgerBtn span:nth-child(1){display: block;}
 
 #hamburgerBtn span:nth-child(2){display: none;}
@@ -107,7 +186,6 @@ nav ul li a {
    font-family: var(--robo);
    text-decoration: none;
    padding: .8rem 2vw;
-   /* padding: 10px; */
    border-bottom: var(--green);
    border-left: var(--darkgrey);
    border-right: var(--darkgrey);
@@ -116,12 +194,15 @@ nav ul li a {
    border-width: thin;
 }
 
-nav ul li a {
+/* nav ul li a {
   border-top: 2px solid var(--green);
-}
+} */
+
+nav ul li:nth-child(5){
+   border-bottom: 3px solid var(--lightgreen);
+ }
 
 main {
-   /* border-top: 1px solid var(--green); */
    margin-right: 5px;
    margin-left: 5px;
 }
@@ -142,6 +223,36 @@ footer {
    text-align: center;
    padding: 10px;
    margin: 20px 0px -1px 0px;  
+}
+
+footer div div a {
+   color: rgb(255, 200, 200);
+}
+
+footer div div a:hover {
+   background-color: rgba(0,0,0,0.3);
+}
+
+footer div div a:visited{
+   color: rgb(225, 150, 255);
+}
+
+iframe {
+   max-width: 200px;
+   max-height: 200px;
+}
+/* #footer-wrapper {
+   display: flex;
+   justify-content: center;
+} */
+
+/* #contact-info {
+   display:block;
+} */
+
+footer img{
+   max-width: 100px;
+   max-height: 100px;
 }
 
 .main-top-margin{
