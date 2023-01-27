@@ -8,7 +8,7 @@ function toggleMenu() {
 const x = document.getElementById("hamburgerBtn")
 x.onclick = toggleMenu;
 
-// header Date *****************************************************************
+// Header Date *****************************************************************
 const headerdate = document.querySelector("#headerdate"); 
 
 const now = Date.now(); 

@@ -1,11 +1,9 @@
 
 @media only screen and (min-width: 37.5em) {
     
-  .social-wrapper{
-    display:flex;
-    align-self:flex-start;
-  }
-  
+
+  /* HEADER ********** */
+
   header img{
     max-width: 130px;
     max-height: 130px;
@@ -29,6 +27,11 @@
     max-height: 32px;
   }
 
+  .social-wrapper{
+    display:flex;
+    align-self:flex-start;
+  }
+
   header div a:nth-child(1){
     padding: 5px 2.5px 60px 5px;
   }
@@ -44,6 +47,7 @@
     padding: 5px 5px 60px 2.5px;
   }
   
+  /* MAIN ********** */
   main {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -103,6 +107,9 @@
     grid-row-end: 4;
  }
 
+
+ /* FOOTER ********** */
+ 
  footer img{
     max-width: 249px;
     max-height: 249px;

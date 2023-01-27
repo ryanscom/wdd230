@@ -1,8 +1,7 @@
 @media only screen and (min-width: 65em){
  
-nav ul li a { 
-  padding: .5rem 1rem
-}
+
+/* HEADER ********** */
 
 header h1 {
   font-size: 36px;
@@ -17,6 +16,13 @@ header {
   border-bottom: 4px solid var(--green);
 }
 
+
+/* NAV ********** */
+
+nav {
+  border-bottom: 4px solid var(--green);
+}
+
 nav ul#primaryNav {
   display: flex;
   justify-content: flex-start;
@@ -24,25 +30,28 @@ nav ul#primaryNav {
   text-align: center;  
 }
 
-nav {
-  border-bottom: 4px solid var(--green);
-}
-nav ul li a {
-  border: none;
-  border-right: 1px solid var(--black);
-}
+/* nav ul :nth-child(2){
+   border-left: 2px solid var(--green);
+} */
 
-nav ul li a:nth-child(1) {
-  border-left: 1px solid var(--black);
+nav ul li {
+  flex: 1 1;
 }
 
 nav ul li:nth-child(5){
   border-bottom: none;
 }
 
-nav ul li {
-  flex: 1 1;
+nav ul li a {
+  border: none;
+  border-right: 1px solid var(--black);
+  border-left: 1px solid var(--black);
+  padding: .5rem 1rem
 }
+
+
+
+/* MAIN ********** */
 
 main {
   display: grid;

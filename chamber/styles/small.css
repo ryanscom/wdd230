@@ -15,10 +15,12 @@
     --white: #e0f8f1;  
 }
 
+/* BODY ********** */
 body {
    background-color: var(--background-cream);
 }
 
+/* HEADER ********** */
 header {
    background-image: linear-gradient(to right, var(--black), var(--grey));
    display: flex;
@@ -26,7 +28,7 @@ header {
    border-bottom: 4px solid var(--lightgreen);
 }
 
-header button{
+header button {
    position: absolute;
    background-color: transparent;
    color: white;
@@ -35,7 +37,12 @@ header button{
    margin: 5px 20px 20px 5px;
 }
 
-header h1{
+#title-container {
+   display: block;
+   width: 100%;
+}
+
+header h1 {
    font-family: var(--robo);
    background-color: transparent;
    color: white;
@@ -47,7 +54,7 @@ header h1{
    padding-right: 10px;
 }
 
-header h2{
+header h2 {
    font-family: var(--robo);
    background-color: transparent;
    color: white;
@@ -59,7 +66,7 @@ header h2{
    padding-right: 10px;
 }
 
-header div p{
+header div p {
    color: var(--lightgreen);
    text-align: center;
    margin-top: 8px;
@@ -68,18 +75,55 @@ header div p{
    padding-right: 10px;
 }
 
-nav {
-   background-color: var(--darkgrey);
+.social-wrapper {
+   display: block;
+   align-self: center;
 }
 
-nav button{
-   margin: .2rem 2vw;
-   background: var(--darkgrey);
-   border: none;
-   font-size: 2rem;
-   color: var(--white);
-   flex: 1 1;
+header img {
+   max-width: 110px;
+   max-height: 110px;
 }
+
+header div img {
+   max-width: 32px;
+   max-height: 32px;
+}
+
+header div a:nth-child(1) {
+   padding: 10px 2px 2px 2.5px;
+}
+
+header div a:nth-child(2) {
+   padding: 10px 5px 2.5px .5px;
+}
+
+header div a:nth-child(3) {
+   padding: 2px 2px 5px 2.5px;
+}
+
+header div a:nth-child(4) {
+   padding: 2px 5px 5px .5px;
+}
+
+header div a:hover {
+   background-color: transparent;
+}
+
+
+/* NAV ********** */
+
+#hamburgerBtn span:nth-child(1) 
+{display: block;}
+
+#hamburgerBtn span:nth-child(2) 
+{display: none;}
+
+#hamburgerBtn.open span:nth-child(1) 
+{display: none;}
+
+#hamburgerBtn.open span:nth-child(2) 
+{display: block;}
 
 nav ul {
    display: none;
@@ -89,57 +133,21 @@ nav ul {
    margin: 0;
 }
 
-nav ul.open{
+nav ul.open {
    display: block
 }
 
-.social-wrapper{
-   display: block;
-   align-self: center;
+nav ul li:nth-child(1){
+   background-color: #396925;
+ }
+
+nav ul li:nth-child(5){
+   border-bottom: 3px solid var(--lightgreen);
+ }
+
+nav ul li:hover {
+   background-color: var(--black);
 }
-
-header img{
-   max-width: 110px;
-   max-height: 110px;
-}
-
-header div img{
-   max-width: 32px;
-   max-height: 32px;
-}
-
-header div a:nth-child(1){
-   padding: 10px 2px 2px 2.5px;
-}
-
-header div a:nth-child(2){
-   padding: 10px 5px 2.5px .5px;
-}
-
-header div a:nth-child(3){
-   padding: 2px 2px 5px 2.5px;
-}
-
-header div a:nth-child(4){
-   padding: 2px 5px 5px .5px;
-}
-
-header div a:hover{
-   background-color: transparent;
-}
-
-#title-container{
-   display: block;
-   width: 100%;
-}
-
-#hamburgerBtn span:nth-child(1){display: block;}
-
-#hamburgerBtn span:nth-child(2){display: none;}
-
-#hamburgerBtn.open span:nth-child(1){display: none;}
-
-#hamburgerBtn.open span:nth-child(2){display: block;}
 
 nav ul li a {
    display: block;
@@ -157,9 +165,13 @@ nav ul li a {
    border-width: thin;
 }
 
-nav ul li:nth-child(5){
-   border-bottom: 3px solid var(--lightgreen);
- }
+nav ul li a:hover {
+   color: var(--extralightgreen)
+}
+
+
+
+/* MAIN ********** */
 
 main {
    display: block;
@@ -232,6 +244,9 @@ main {
    height: 200px;
 }
 
+
+/* FOOTER ********** */
+
 footer {
    display: block;
    font-family: var(--robo);
@@ -267,6 +282,9 @@ footer a img {
    border-top: 2px solid var(--darkgreen);
    padding-top: 25px;
 }
+
+
+/* PAGE CONTAINER ********** */
 
 #page-container {
    position: relative;
