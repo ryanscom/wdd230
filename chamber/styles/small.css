@@ -87,7 +87,8 @@ header img {
 
 header img:hover {
    overflow:hidden;
-   background-color: #396925;
+   background-color: rgba(0, 194, 39, 0.3);
+   border-radius: 20%;
 }
 
 header div img {
@@ -276,8 +277,14 @@ footer div div a:hover{
 
 footer a img {
    max-width: 150px;
-   max-height: 150px;
+   max-height: 150px; 
 }
+
+/* footer a img:hover {
+   overflow:hidden;
+   background-color:rgba(54,54,54,0.3);
+   border-radius: 20%;
+} */
 
 .mapIcon{
    height: 20px;
