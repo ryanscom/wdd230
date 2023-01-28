@@ -86,6 +86,7 @@ header img {
 }
 
 header div img {
+   margin-right: -2px;
    max-width: 32px;
    max-height: 32px;
 }
