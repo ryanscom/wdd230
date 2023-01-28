@@ -88,7 +88,8 @@ header img {
 header img:hover {
    overflow:hidden;
    background-color: rgba(0, 194, 39, 0.3);
-   border-radius: 20%;
+   border-radius: 30%;
+   border: 3px solid var(--black)
 }
 
 header div img {
@@ -113,9 +114,9 @@ header div a:nth-child(4) {
    padding: 2px 5px 5px .5px;
 }
 
-header div a:hover {
+/* header div a:hover {
    background-color: transparent;
-}
+} */
 
 
 /* NAV ********** */
@@ -280,12 +281,6 @@ footer a img {
    max-height: 150px; 
 }
 
-/* footer a img:hover {
-   overflow:hidden;
-   background-color:rgba(54,54,54,0.3);
-   border-radius: 20%;
-} */
-
 .mapIcon{
    height: 20px;
    width: 20Px;
@@ -309,15 +304,24 @@ footer a img {
  }
  
  /* EFFECTS ********** */
-.mapIcon:hover, .logo:hover, .socialIcons:hover, .navText:hover{
+.logo:hover, .navText:hover{
    transform: scale(.9);
-   transition: ease .5s;
-  
+   transition: ease .3s;
  }
+
+ .socialIcons:hover{
+   transform: scale(1.2);
+   transition: ease .1s;
+ }
+
+.mapIcon:hover{
+   transform: scale(1.5);
+   transition: ease .1s;
+}
 
 .navText:hover{
    border-left: none;
    border-right: none;
-   transform: scale(1.2);
-   transition: ease .5s;
+   transform: scale(1.1);
+   transition: ease .3s;
  }
