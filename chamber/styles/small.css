@@ -269,14 +269,9 @@ footer div div a:hover{
    color: rgb(4, 255, 0);
 }
 
-footer img{
+footer a img {
    max-width: 100px;
    max-height: 100px;
-}
-
-footer a img {
-   max-width: 20px;
-   max-height: 20px;
 }
 
 #sub-footer {
@@ -296,3 +291,15 @@ footer a img {
    padding-bottom: 1px;   
  }
  
+ /* EFFECTS ********** */
+.mapIcon:hover, .logo:hover, .socialIcons:hover, .navText:hover{
+   transform: scale(.9);
+   transition: ease .5s;
+ }
+
+.navText:hover{
+   border-left: none;
+   border-right: none;
+   transform: scale(1.2);
+   transition: ease .5s;
+ }

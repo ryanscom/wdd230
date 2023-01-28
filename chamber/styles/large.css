@@ -30,10 +30,6 @@ nav ul#primaryNav {
   text-align: center;  
 }
 
-/* nav ul :nth-child(2){
-   border-left: 2px solid var(--green);
-} */
-
 nav ul li {
   flex: 1 1;
 }
