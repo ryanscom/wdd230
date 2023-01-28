@@ -85,6 +85,11 @@ header img {
    max-height: 110px;
 }
 
+header img:hover {
+   overflow:hidden;
+   background-color: #396925;
+}
+
 header div img {
    margin-right: -2px;
    max-width: 32px;
@@ -274,6 +279,11 @@ footer a img {
    max-height: 150px;
 }
 
+.mapIcon{
+   height: 20px;
+   width: 20Px;
+}
+
 #sub-footer {
    border-top: 2px solid var(--darkgreen);
    padding-top: 25px;
@@ -295,6 +305,7 @@ footer a img {
 .mapIcon:hover, .logo:hover, .socialIcons:hover, .navText:hover{
    transform: scale(.9);
    transition: ease .5s;
+  
  }
 
 .navText:hover{
