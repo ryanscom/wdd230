@@ -26,17 +26,6 @@ date2.innerHTML = new Date(document.lastModified).toLocaleDateString("en-US");
 
 
 
-function responsiveMenu(){
-    const icon = document.querySelector('.icon');
-    const smallHead = document.querySelector('.smallHead')
-    const smallMenu = document.querySelector('.smallMenu')
-    icon.addEventListener('click', () => {
-        smallHead.classList.toggle('displayNone')
-        smallMenu.classList.toggle('displayNone');
-    })
-}
-
-responsiveMenu()
 
 
 
