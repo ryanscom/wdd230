@@ -89,7 +89,7 @@ header img:hover {
    overflow:hidden;
    background-color: rgba(0, 194, 39, 0.3);
    border-radius: 30%;
-   border: 3px solid var(--black)
+   border: 3px solid var(--extralightgreen);
 }
 
 header div img {
@@ -174,7 +174,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-   color: var(--extralightgreen)
+   color: var(--extralightgreen);
+   background-color: var(--black);
+   border: 1wdpx solid var(--extralightgreen);
 }
 
 
@@ -304,7 +306,13 @@ footer a img {
  }
  
  /* EFFECTS ********** */
-.logo:hover, .navText:hover{
+
+ .logo:hover{
+   transform: scale(.9);
+   transition: ease .3s;
+ }
+
+ .navText:hover{
    transform: scale(.9);
    transition: ease .3s;
  }
@@ -320,8 +328,6 @@ footer a img {
 }
 
 .navText:hover{
-   border-left: none;
-   border-right: none;
    transform: scale(1.1);
    transition: ease .3s;
  }
