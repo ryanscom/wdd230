@@ -176,7 +176,7 @@ nav ul li a {
 nav ul li a:hover {
    color: var(--extralightgreen);
    background-color: var(--black);
-   border: 1wdpx solid var(--extralightgreen);
+   border: 1px solid var(--extralightgreen);
 }
 
 
