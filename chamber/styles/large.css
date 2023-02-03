@@ -38,11 +38,8 @@ nav ul li:nth-child(5) {
 main {
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 200px;
+  background-color: var(--darkgreen);
 }
-
-
-
-
 
 #call-to-action {
   height: auto;

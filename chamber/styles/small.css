@@ -17,7 +17,7 @@
 
 /* BODY ********** */
 body {
-   background-color: var(--background-cream);
+   background-color: var(--black);
 }
 
 /* HEADER ********** */
@@ -177,97 +177,129 @@ nav ul li a {
 main {
    display: block;
    text-align: center;
-   background-color: var(--background-cream);
+   background-color: var(--black);
    margin: 5px;
 }
 
-#hero-img-fill {
+#call-to-action {
+   position: relative;
+   border: 3px solid var(--extralightgreen);
+   background-image: url('../images/sunset-boat.jpg');
    background-size: cover;
    background-position: center;
-   width: 100%;
-   height: 100%;
- }
-
-/* #hero-img-box {
-   display: block;
-   margin: auto;
-
-   height: auto;
-   max-height: 100%;
-
-   width: auto;
-   max-width: 100%;
-} */
-
-#call-to-action {
-   border: thin solid var(--darkgrey);
-   background-color: var(--white);
-   margin-top: 0px;
    height: 200px;
+   display: grid;
+   grid-template-columns: 4fr;
+   grid-template-rows: 5fr;
+  
+}
 
-   /* display: block;
-   margin: auto;
+#heroH3Div {
+   position:absolute;
+   font-size: 20px;
+   margin-top: 15px;
+   margin-left: 15px;
+   padding-left: 10px;
+   padding-right: 10px;
+   background-color: rgba(0, 0, 0, 0.5);
+   border-top-right-radius: 25px;
+   border-bottom-left-radius: 25px;
+   color: var(--extralightgreen);
+   border: 2px solid lightgreen;
+}
 
-   height: auto;
-   max-height: 100%;
+#heroJoinDiv {
+   grid-column: 4/5;
+   grid-row: 6/6;
+   font-size: 25px;
+   margin-bottom: 15px;
+   margin-right: 15px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   background-color: rgba(0, 0, 0, 0.5);
+   border-top-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+   border: 2px solid lightgreen;
+   /* color: var(--extralightgreen); */
+   
+   
+}
 
-   width: auto;
-   max-width: 100%; */
+#heroJoinDiv a:link { 
+   text-decoration: none; 
+   color: rgb(255, 200, 200);
+}
+
+#heroJoinDiv a:visited { 
+   text-decoration: none; 
+   /* color: rgb(225, 150, 255); */
+   color: rgb(255, 200, 200);
+}
+
+#heroJoinDiv a:hover { 
+   text-decoration: none; 
+   color: rgb(4, 255, 0);
+}
+
+#heroJoinDiv a:active { 
+   text-decoration: none; 
 }
 
 #event1 {
-   border: thin solid var(--darkgrey); 
-   background-color: var(--white);
+   border: 2px solid var(--green); 
+   background-color: var(--darkgrey);
    margin-top: 5px;
    height: 200px;
 }
 
 #weather {
-   border: thin solid var(--darkgrey); 
-   background-color: var(--white);
+   border: 2px solid var(--green); 
+   background-color: var(--darkgrey);
    margin-top: 5px;
    height: 200px;
 }
 
 #news {
-   border: thin solid var(--darkgrey); 
-   background-color: var(--white);
+   border: 2px solid var(--green); 
+   background-color: var(--darkgrey);
    margin-top: 5px;
    margin-bottom: 5px;
    height: 200px;
 }
 
 #spotlight-section {
-   border: thin solid var(--darkgrey); 
-   background-color: var(--extralightgreen);
+   border: 3px solid var(--black); 
+   background-color: var(--lightgreen);
    padding: 5px 5px 5px 5px;
 }
 
 #spotlight1 {
-   border: thin solid var(--darkgrey);
-   background-color: var(--white);
+   border: 2px solid var(--black);
+   background-color: var(--darkgrey);
    margin-top: 0px;
    height: 200px;
 }
 
 #spotlight2 {
-   border: thin solid var(--darkgrey); 
-   background-color: var(--white);
+   border: 2px solid var(--black); 
+   background-color: var(--darkgrey);
    margin-top: 5px;
    height: 200px;
 }
 
 #spotlight3 {
    display: none;
-   border: thin solid var(--darkgrey); 
-   background-color: var(--white);
+   border: 2px solid var(--black); 
+   background-color: var(--darkgrey);
    margin-top: 5px;
    height: 200px;
 }
 
 #join {
-   border: thin solid var(--darkgrey); 
-   background-color: var(--white);
+   border: 2px solid var(--green); 
+   background-color: var(--darkgrey);
    margin-top: 5px;
    height: 200px;
 }
