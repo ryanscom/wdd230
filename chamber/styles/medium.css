@@ -69,7 +69,7 @@
     grid-row-start: 1;
     grid-row-end: 1;
  }
- 
+
  #event1 {
     margin-right:2.5px;
     grid-column-start: 1;
@@ -119,7 +119,7 @@
 
 
  /* FOOTER ********** */
- footer a img {
+.footerlogo{
     max-width: 249px;
     max-height: 249px;
 }
