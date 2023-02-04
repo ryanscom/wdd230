@@ -105,10 +105,6 @@
   display: block;
 }
 
-/* #newsDiv a{
-  display: flex;
-} */
-
  #spotlight-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -121,12 +117,17 @@
  #spotlight1 {
     margin: 0px 2.5px 0px 2.5px;
  }
- 
+
+ #wilderSecOne {
+  padding-right: 30px;
+}
+
  #spotlight2 {
     margin: 0px 0px 0px 2.5px;
  }
 
  #join {
+    display: block;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
