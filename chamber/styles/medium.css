@@ -70,6 +70,14 @@
     grid-row-end: 1;
  }
 
+ #heroH3Div {
+  font-size: 20px;
+}
+
+#heroJoinDiv {
+  font-size: 25px;
+}
+
  #event1 {
     margin-right:2.5px;
     grid-column-start: 1;
@@ -93,6 +101,14 @@
     grid-row-end: 2;
  }
  
+ #newsPar {
+  display: block;
+}
+
+/* #newsDiv a{
+  display: flex;
+} */
+
  #spotlight-section {
     display: grid;
     grid-template-columns: 1fr 1fr;

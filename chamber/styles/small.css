@@ -196,7 +196,7 @@ main {
 
 #heroH3Div {
    position:absolute;
-   font-size: 20px;
+   font-size: 15px;
    margin-top: 15px;
    margin-left: 15px;
    padding-left: 10px;
@@ -204,14 +204,14 @@ main {
    background-color: rgba(0, 0, 0, 0.5);
    border-top-right-radius: 25px;
    border-bottom-left-radius: 25px;
-   color: var(--extralightgreen);
+   color: var(--white);
    border: 2px solid lightgreen;
 }
 
 #heroJoinDiv {
    grid-column: 4/5;
    grid-row: 6/6;
-   font-size: 25px;
+   font-size: 15px;
    margin-bottom: 15px;
    margin-right: 15px;
    padding-left: 10px;
@@ -221,10 +221,7 @@ main {
    background-color: rgba(0, 0, 0, 0.5);
    border-top-left-radius: 25px;
    border-bottom-right-radius: 25px;
-   border: 2px solid lightgreen;
-   /* color: var(--extralightgreen); */
-   
-   
+   border: 2px solid lightgreen; 
 }
 
 #heroJoinDiv a:link { 
@@ -234,7 +231,6 @@ main {
 
 #heroJoinDiv a:visited { 
    text-decoration: none; 
-   /* color: rgb(225, 150, 255); */
    color: rgb(255, 200, 200);
 }
 
@@ -248,22 +244,70 @@ main {
 }
 
 #event1 {
+   background-image: url('../images/woodenboat.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 200px;
    border: 2px solid var(--green); 
    background-color: var(--darkgrey);
    margin-top: 5px;
    height: 200px;
 }
 
+#woodBoatDiv {
+   color: white;
+   background-color: rgba(0, 0, 0, 0.3);
+   height: 100%;
+}
+
+#woodBoatDiv h3{
+   padding-top: 20px;
+   font-size: 20px;
+   margin-bottom: -15px;
+}
+
+#woodBoatDiv h3{
+   margin-bottom: -15px;
+}
+
+
+#woodBoatDiv a{
+   color: var(--lightgreen);
+}
+
+#newsDiv{
+   color: white;
+   padding: 0px 15px;
+}
+
+#newsDiv h3{
+   color: lightgreen;
+}
+
+#newsDiv h4 {
+   margin: 10px;
+}
+
+#newsPar {
+   display: none;
+   color: white;
+   margin: 5px;
+}
+#newsDiv a{
+   color: lightgreen;
+}
+
 #weather {
    border: 2px solid var(--green); 
-   background-color: var(--darkgrey);
+   color: white;
+   background-color: rgb(3, 12, 131);
    margin-top: 5px;
    height: 200px;
 }
 
 #news {
    border: 2px solid var(--green); 
-   background-color: var(--darkgrey);
+   background-color: rgb(38, 41, 38);
    margin-top: 5px;
    margin-bottom: 5px;
    height: 200px;
@@ -277,29 +321,73 @@ main {
 
 #spotlight1 {
    border: 2px solid var(--black);
-   background-color: var(--darkgrey);
+   background-color:  rgb(38, 41, 38);
    margin-top: 0px;
-   height: 200px;
+   height: 200px; 
+   color: white;
+   display: Grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 30px;
+   padding: 40px;
+   /* padding-top: 20px;
+   padding-right: 15px; */
+}
+
+#wilderSecOne {
+   grid-column: 2/3; 
+   grid-row: 1/2;
+   padding-right: 2.5px
+}
+
+#WilderSecTwo {
+   grid-column: 1/2;
+   grid-row: 1/2;
+   padding-left: 2.5px
+}
+
+#wilderSecThree {
+   grid-column: 1/3;
+   grid-row: 2/3;
+}
+
+#wilderSecThree a {
+   color: var(--extralightgreen);
 }
 
 #spotlight2 {
    border: 2px solid var(--black); 
-   background-color: var(--darkgrey);
+   background-color: rgb(248, 222, 243);
    margin-top: 5px;
+   padding: 30px;
    height: 200px;
 }
 
 #spotlight3 {
    display: none;
    border: 2px solid var(--black); 
-   background-color: var(--darkgrey);
+   background-image: url('../images/windows.jpg');
+   background-size: cover;
+   background-position: center;
    margin-top: 5px;
+   
    height: 200px;
+   color: white;
+}
+
+#fortWorden {
+   background-color: rgba(0, 0, 0, 0.5);
+   height: 100%;
+   padding: 30px;
+}
+
+#fortWorden a {
+   color: var(--extralightgreen);
 }
 
 #join {
    border: 2px solid var(--green); 
-   background-color: var(--darkgrey);
+   color: var(--white);
+   background-color: rgb(38, 41, 38);
    margin-top: 5px;
    height: 200px;
 }
