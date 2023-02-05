@@ -30,7 +30,7 @@ const date = new Date()
 const weekDate = date.getDay()
 let ad = document.querySelector("#ad");
 
-if (weekDate === 6 || weekDate === 2 ) {
+if (weekDate === 1 || weekDate === 2 ) {
     ad.style.display = "flex";
 }
 else {
