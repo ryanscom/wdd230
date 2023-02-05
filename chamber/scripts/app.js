@@ -1,5 +1,5 @@
 
-//Toggle menu icon**************************************************************
+//Toggle Menu Icon**************************************************************
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
@@ -25,9 +25,21 @@ const date2 = document.querySelector("#date2");
 date2.innerHTML = new Date(document.lastModified).toLocaleDateString("en-US");
 
 
+// Toggel Meeting Ad ************************************************************
 
+const date = new Date()
+const weekDate = date.getDay()
+let ad = document.querySelector("#ad");
 
+if (weekDate === 6 || weekDate === 2 ) {
+    ad.style.display = "flex";
+}
+else {
+    ad.style.display = "none";
+}
 
-
-
-
+// Close Meeting Ad *************************************************************
+const closeBtn = document.querySelector("#closeBtn"); 
+closeBtn.addEventListener('click', () => {
+    ad.remove(ad);
+});
