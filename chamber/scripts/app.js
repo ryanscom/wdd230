@@ -26,7 +26,6 @@ date2.innerHTML = new Date(document.lastModified).toLocaleDateString("en-US");
 
 
 // Toggel Meeting Ad ************************************************************
-
 const date = new Date()
 const weekDate = date.getDay()
 let ad = document.querySelector("#ad");
