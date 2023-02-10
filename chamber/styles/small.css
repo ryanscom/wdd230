@@ -221,14 +221,22 @@ main {
 #call-to-action {
    position: relative;
    border: 3px solid var(--extralightgreen);
-   background-image: url('../images/sunset-boat.jpg');
-   background-size: cover;
-   background-position: center;
-   height: 200px;
-   display: grid;
-   grid-template-columns: 4fr;
-   grid-template-rows: 5fr;
-  
+   /* background-image: url('../images/sunset-boat.jpg'); */
+   /* background-size: cover; */
+   /* background-position: center; */
+   display: block;
+   height: auto;
+}
+
+#heroPic { 
+   padding: 0;
+   margin: 0;
+}
+
+#call-to-action img{
+   max-width: 100%;
+   height:auto;
+   margin-bottom: -4px;
 }
 
 #heroH3Div {
@@ -253,11 +261,9 @@ main {
 }
 
 #heroJoinDiv {
-   grid-column: 4/5;
-   grid-row: 6/6;
+   position:absolute;
+  
    font-size: 15px;
-   margin-bottom: 15px;
-   margin-right: 15px;
    padding-left: 15px;
    padding-right: 15px;
    padding-top: 10px;
@@ -267,6 +273,8 @@ main {
    border-top-left-radius: 25px;
    border-bottom-left-radius: 25px;
    border: 2px solid lightgreen; 
+   right: 15px;
+   bottom: 15px;
 }
 
 #heroJoinDiv a { 
@@ -283,7 +291,6 @@ main {
    background-image: url('../images/woodenboat.jpg');
    background-size: cover;
    background-position: center;
-   height: 200px;
    border: 2px solid var(--green); 
    margin-top: 5px;
    height: 200px;

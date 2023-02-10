@@ -35,7 +35,7 @@
 
             <header >
                 <div class="logoBox">
-                    <a href="index.html"><img class="logo" src="images/logo-tran.png" alt="PT Chamber logo"></a>  
+                    <a href="index.html"><img class="logo" src="images/logo-tran.webp" alt="PT Chamber logo"></a>  
                 </div>
                     <Button id=hamburgerBtn><span>&#9776;</span><span>X</span></Button> 
                 <div id="title-container">
@@ -72,13 +72,21 @@
                 
             <main>
                 <div id="call-to-action"> 
+                   
                     <div id="heroH3Div">
                         <h3>Welcome to Port Townsend</h3>
                     </div>
                     <div id="heroJoinDiv">
                         <a href="index.html" class="navText">Join the Chamber!</a>
                     </div>
+                    <picture id="heroPic">
+                        <source media="(max-width: 300px)" srcset="images/temp300.jpg" >
+                        <source media="(max-width: 600px)" srcset="images/temp600.jpg" >
+                        <source media="(max-width: 800px)" srcset="images/temp800.jpg" >
+                        <img src="images/temp800.jpg" alt="temp image" >
+                    </picture>
                 </div>
+
                 <div id="event1">
                     <div id="woodBoatDiv">
                         <h3>Wooden Boat Festival</h3>
@@ -90,6 +98,9 @@
                     <h3>
                         Weather
                     </h3>
+                    <p>Temp: <span id="tempSpan">33</span></p>
+                    <p>Wind Speed: <span id="windSpeedSpan">5.5</span> km/h</p>
+                    <p>Wind Chill: <span id="windChillSpan"> </span></p>
                 </div>
                 <div id="news">
                     <div id="newsDiv">
@@ -144,7 +155,7 @@
         <footer id="footer">
             <div id="footer-wrapper">
                 <div class="logoBox">
-                    <a href="index.html"><img class="footerlogo" src="images/logo-tran.png" alt="PT Chamber logo"></a>
+                    <a href="index.html"><img class="footerlogo" src="images/logo-tran.webp" alt="PT Chamber logo"></a>
                 </div>  
                 <div id="contact-info">
                     <h3>Port Townsend Chamber of Commerce</h3>
@@ -164,5 +175,6 @@
         </footer >
     </div>
     <script src="scripts/app.js"></script>  
+    <script src="scripts/windChill.js"></script>
 </body>
 </html>
