@@ -237,6 +237,7 @@ main {
    max-width: 100%;
    height:auto;
    margin-bottom: -4px;
+   /* object-fit:cover */
 }
 
 #heroH3Div {
@@ -288,7 +289,7 @@ main {
 }
 
 #event1 {
-   background-image: url('../images/woodenboat.jpg');
+   background-image: url('../images/woodenboat.webp');
    background-size: cover;
    background-position: center;
    border: 2px solid var(--green); 
@@ -426,7 +427,7 @@ main {
 #spotlight3 {
    display: none;
    border: 2px solid var(--black); 
-   background-image: url('../images/windows.jpg');
+   background-image: url('../images/windows.webp');
    background-size: cover;
    background-position: center;
    margin-top: 5px;
