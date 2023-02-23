@@ -7,6 +7,7 @@
   }
 
   /* HEADER ********** */
+  
   header img {
     max-width: 130px;
     max-height: 130px;
@@ -138,6 +139,41 @@
     grid-row-end: 4;
  }
 
+ /* Discovery Page: Main ********** */
+ .discoMain section {
+  max-width: 900px;
+}
+
+.discoMain h1 {
+  font-size: 36px;
+}
+
+.dicsoImagesDiv section h2{
+  font-size: 30px;
+  padding-left: 15px;
+  margin: 30px 0px 30px 0px;
+}
+
+.dicsoImagesDiv section figure{
+  margin: 30px 0px 30px 0px;
+}
+
+.disco-img img{
+  filter: blur(3px) grayscale(90%);
+  border-radius: 15px 15px 0px 0px;
+}
+
+.disco-img img:hover{
+  filter: none;
+}
+
+.figText {
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 0px 0px 15px 15px;
+}
+
 
  /* FOOTER ********** */
 .footerlogo{
@@ -172,6 +208,4 @@ footer h3{
   transform: scale(1.03);
   transition: ease .1s;
 }
-
-
 }

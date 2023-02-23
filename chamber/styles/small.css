@@ -15,6 +15,10 @@
     --white: #e0f8f1;  
 }
 
+/* * {
+   box-sizing: border-box; 
+} */
+
 /* BODY ********** */
 body {
    background-color: var(--black);
@@ -79,6 +83,7 @@ header button {
    display: block;
    width: 100%;
    grid-column: 2/5 ;
+   margin-bottom: 20px;
 }
 
 header h1 {
@@ -115,10 +120,11 @@ header div p {
 }
 
 .social-wrapper {
-   display: block;
+   display: flex;
    align-self: center;
    grid-column: 5/6;
    grid-row: 1/2;
+   justify-self: right;
 }
 
 .logo {
@@ -194,7 +200,7 @@ nav ul li:nth-child(5) {
    border-bottom: 2px solid var(--black);
  }
 
- nav ul li:hover {
+nav ul li:hover {
    color: var(--extralightgreen);
    background-color: var(--black);
    border: 1px solid var(--extralightgreen);
@@ -210,7 +216,7 @@ nav ul li a {
 }
 
 /* MAIN ********** */
-main {
+#indexMain {
    font-family:Arial, Helvetica, sans-serif;
    display: block;
    text-align: center;
@@ -490,6 +496,52 @@ main {
 
 #join p {
    padding-top: 20px;
+}
+
+/* Discover Page: Main********** */
+.discoMain{
+   display: block;
+   color: white;
+   background-color: rgb(46, 62, 40);
+   padding-bottom: 5px;
+}
+.discoMain h1 {
+   text-align: center;
+   background-color: #061400;
+   border-bottom: 2px solid var(--lightgreen);
+   margin: 0;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   font-size: 25px;
+}
+
+.dicsoImagesDiv section{
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.dicsoImagesDiv section h2{
+   position: absolute;
+   margin: 10px;
+}
+
+.dicsoImagesDiv section figure{
+   max-width: 100%;
+   height:auto;
+   margin: 15px 0px 15px 0px;
+}
+
+.disco-img img{
+   max-width: 100%;
+   height: auto; 
+   margin-bottom: -4px; 
+}
+
+.figText {
+   background-color: #061400;
+   text-align: center;
+   padding: 5px 0px;
 }
 
 /* FOOTER ********** */
