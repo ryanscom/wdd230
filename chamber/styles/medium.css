@@ -63,10 +63,10 @@
   }
 
   /* MAIN ********** */
-  main {
+  #indexMain {
     display: grid;
     grid-template-columns: 2fr 1fr;
- }
+  }
   
  #call-to-action {
     grid-column-start: 1;
@@ -173,7 +173,6 @@
   padding-right: 15px;
   border-radius: 0px 0px 15px 15px;
 }
-
 
  /* FOOTER ********** */
 .footerlogo{

@@ -13,7 +13,7 @@ header button {
 
 header {
   border-bottom: 3px solid var(--lightgreen);
-  grid-template-rows: 1fr none;
+  grid-template-rows: 1fr;
 }
 
 
@@ -35,7 +35,7 @@ nav ul li:nth-child(5) {
 }
 
 /* MAIN ********** */
-main {
+#indexMain {
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
   background-color: var(--darkgreen);
