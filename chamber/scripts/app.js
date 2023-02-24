@@ -79,7 +79,6 @@ if ("IntersectionObserver" in window) {
 }
 
 //Number of visits **************************************************************
-
 const numVisitsDisplay = document.querySelector('#numberVisits');
 let numVisits = Number(window.localStorage.getItem('visitsLocStorage'));
 
