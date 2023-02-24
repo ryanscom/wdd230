@@ -81,7 +81,7 @@ if ("IntersectionObserver" in window) {
 //Number of visits **************************************************************
 
 const numVisitsDisplay = document.querySelector('#numberVisits');
-const numVisits = Number(window.localStorage.getItem('visitsLocStorage'));
+let numVisits = Number(window.localStorage.getItem('visitsLocStorage'));
 
 if (numVisits !== 0) {
     numVisitsDisplay.textContent = numVisits;
