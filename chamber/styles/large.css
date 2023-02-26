@@ -123,4 +123,36 @@ nav ul li:nth-child(5) {
   border: 3px solid var(--extralightgreen);
 }
 
+/* Join Page: Main ********** */
+#joinMain form {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.membershipsDescriptionContainer {
+  grid-column: 2/3;
+  float: left;
+}
+
+form label.membershipInfo input, label.membershipInfo textarea{ 
+  font-size: .9rem;
+  padding: .25rem; 
+}
+
+#joinMain form fieldset:nth-child(1) {
+  margin-bottom: 0;
+}
+
+/* #memberRadioFieldset {
+  padding-top: 0;
+}
+
+#memberInfoFieldset {
+  Margin-Bottom: 0;
+} */
+
+.submitBtnDiv {
+  grid-column: 1/2
+}
+
 }

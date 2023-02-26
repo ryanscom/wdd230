@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port Townsend Chamber</title>
+    <meta name="description" content="Description of target audience">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header >
+                <div class="logoBox">
+                    <a href="index.html"><img class="logo" src="images/logo-tran.webp" alt="PT Chamber logo"></a>  
+                </div>
+                    <Button id=hamburgerBtn><span>&#9776;</span><span>X</span></Button> 
+                <div id="title-container">
+                <h1>Port Townsend</h1> 
+                <h2>Chamber of Commerce</h2> 
+                <p>
+                    <span id="headerdate"></span>
+                </p>
+                </div>
+
+                <div class="social-wrapper">
+                    <div class="social-box">
+                        <a href="https://www.facebook.com/"><img class="socialIcons" src="images/facebook.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/"><img class="socialIcons" src="images/instagram.png" alt="instagram"></a>
+                        <a href="https://www.youtube.com/"><img class="socialIcons" src="images/youtube.png" alt="youtube"></a>
+                        <a href="https://www.linkedin.com/"><img class="socialIcons" src="images/linkedin.png" alt="linkedin"></a>
+                    </div>
+                </div>
+
+                <div id="navBox">
+                    <nav>
+                        <ul id="primaryNav">
+                            <li> <a href="index.html" class="navText">Home</a></li>
+                            <li> <a href="discover.html" class="navText">Discover</a></li>
+                            <li> <a href="index.html" class="navText">Directory</a></li>
+                            <li> <a href="join.html" class="navText">Join</a></li>
+                            <li> <a href="index.html" class="navText">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </header>
+            <div id="smallViewNav"></div>
+                
+            <main id="joinMain">
+                <form method="get" action="thankyou.html">
+                        <fieldset id="memberInfoFieldset">
+                            <Legend>Your Membership Information</Legend>
+                            <label class="membershipInfo" for="fname">First name:<span class="redStar">*</span>
+                                <input 
+                                    type="text" 
+                                    id="fname" 
+                                    name="fname" 
+                                    pattern="^[A-Za-z]*$"
+                                    required
+                                    >
+                            </label>
+                            <label class="membershipInfo" for="lname">Last name:<span class="redStar">*</span>
+                                <input type="text" 
+                                    id="lname" 
+                                    name="lname"
+                                    pattern="^[A-Za-z]*$"
+                                    required>
+                            </label>
+                            <label class="membershipInfo" for="businessName">Business Name:<span class="redStar">*</span>
+                                <input
+                                    id="businessName"
+                                    type="text" 
+                                    name="businessName"
+                                    title="Only letters, numbers, hyphens and spaces with a minimum of seven characters"
+                                    pattern="^[a-zA-Z0-9- ]{7, }$"
+                                    required
+                                >
+                            <label class="membershipInfo" for="jobTitle">Job Title:
+                                <input
+                                    id="jobTitle"
+                                    name="jobTitle"
+                                    type="text"
+                                    title="Please use only alpha characters, hyphens, and spaces"
+                                    pattern="^[A-Za-z\s\- ]{7,}$">
+                            </label>
+                            <label class="membershipInfo" for="email">E-mail:<span class="redStar">*</span>
+                                <input 
+                                    id="email"
+                                    type="email" 
+                                    placeholder="username@email.com"
+                                    required>
+                            </label>
+                            <label class="membershipInfo" for="phone">Phone number:<span class="redStar">*</span>
+                                <input 
+                                    type="tel" 
+                                    id="phone"
+                                    name="phone"
+                                    minlength="7"
+                                    placeholder="1235556789"
+                                    pattern="[0-9]{10}"
+                                    title="Phone number must be ten characters"
+                                    required
+                                    >
+                            </label>
+                            <label class="textareaLabel membershipInfo" for="comments">Describe your business:
+                                <textarea 
+                                id="comments"
+                                name="comments" 
+                                rows="4" 
+                                cols="30"
+                                ></textarea>
+                            </label>
+                        </fieldset>
+
+                        <div class="membershipsDescriptionContainer">
+                            <fieldset id="membershipDiscFieldset">
+                                <Legend>Your Membership Options</Legend>
+                              
+                                    <div class="membershipDis">
+                                        <h3>NP Membership</h3>
+                                        <p>For non profit organizations. <span class="priceMembership">Free</span></p>
+                                    </div>
+                                    <div class="membershipDis">
+                                        <h3>Bronze Membership</h3>
+                                        <p>Add Insignias and news. <span class="priceMembership">$10USD</span></p>
+                                    </div>
+                                    <div class="membershipDis"> 
+                                        <h3>Silver Membership</h3>
+                                        <p>Get acces to law services.
+                                        <span class="priceMembership">$30USD</span></p>
+                                    </div>
+                                    <div class="membershipDis">
+                                        <h3>Gold Membership</h3>
+                                        <p> Get access to our database, free passes to our conventions.Your business displayed on the homepage.  <span>$40USD</span></p>
+                                    </div>
+                            </fieldset>
+                        </div>
+                        <fieldset id="memberRadioFieldset">
+                            <legend>Choose Your Membership Level</legend>
+                            <label class="radioMembership">
+                                <input 
+                                type="radio" 
+                                name="membership" 
+                                id="1"
+                                >  NP membership
+                            </label>
+                            <label class="radioMembership">
+                                <input 
+                                type="radio" 
+                                name="membership" 
+                                id="2"
+                                >  Bronze Membership
+                            </label>
+                            <label class="radioMembership">
+                                <input 
+                                type="radio" 
+                                name="membership" 
+                                id="3"
+                                >  Silver membership
+                            </label>
+                            <label class="radioMembership">
+                                <input 
+                                type="radio" 
+                                name="membership" 
+                                id="4"
+                                >  Gold Membership
+                            </label>
+                            
+                        </fieldset>
+                    
+                    <div class="submitBtnDiv">
+                        <input class="submitBtn" 
+                            type='submit'
+                            value="Join the Chamber!">
+                    </div>
+                    <input 
+                        type="hidden" 
+                        name="date" 
+                        id="currentTime">
+                    <input 
+                        type="hidden" 
+                        name="time" 
+                        id="formDate">
+                </form>
+      
+            </main>
+        </div>
+        <footer id="footer">
+            <div id="footer-wrapper">
+                <div class="logoBox">
+                    <a href="index.html"><img class="footerlogo" src="images/logo-tran.webp" alt="PT Chamber logo"></a>
+                </div>  
+                <div id="contact-info">
+                    <h3>Port Townsend Chamber of Commerce</h3>
+                    <p >
+                        2409 Jefferson Street <br>
+                        Port Townsend, Washington 98368 <br>
+                        360.385.7869 <br>
+                        director@porttownsendchamber.org <br><br>
+                        <a href="https://goo.gl/maps/B13f4uXDKDy91zgSA"><img class="mapIcon" src="images/pin.png" alt="map pin"></a>
+                        <a href="https://goo.gl/maps/B13f4uXDKDy91zgSA"> Map Location</a> <br> <br>
+                    </p> 
+                </div> 
+            </div>
+            <p id="sub-footer">
+            &copy; <span id="date1"></span> Port Townsend Chamber | Ryan Manthey | WDD 230 project | Last Modification: <span id="date2"></span> | <a href="sources.html" class="sourcesLink">Sources</a>
+            </p>
+            <p>
+                <span class="visitsText">Number of Visits: </span> <span id="numberVisits"> </span>
+            </p>
+        </footer >
+    </div>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/app.js"></script>  
+</body>
+</html>

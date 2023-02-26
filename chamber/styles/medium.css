@@ -139,6 +139,26 @@
     grid-row-end: 4;
  }
 
+ /* Join Page: Main ********** */
+
+#joinMain {
+  display:block;
+}
+
+#joinMain form fieldset {
+  width: 350px;
+  margin: 2rem auto;
+}
+
+.submitBtnDiv {
+  text-align: center;
+  margin-left: 0;
+}
+
+form input.submitBtn {
+  margin: 0 auto 2rem auto;
+}
+
  /* Discovery Page: Main ********** */
  .discoMain section {
   max-width: 900px;
@@ -173,6 +193,8 @@
   padding-right: 15px;
   border-radius: 0px 0px 15px 15px;
 }
+
+
 
  /* FOOTER ********** */
 .footerlogo{
