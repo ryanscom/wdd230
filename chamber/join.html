@@ -125,7 +125,7 @@
                         </fieldset>
 
                         <div class="membershipsDescriptionContainer">
-                            <fieldset>
+                            <fieldset class="tableFieldset">
                                 <Legend>Your Membership Options</Legend>
                                 <table class="memLevelTable">
                                     <thead>
@@ -137,23 +137,47 @@
                                         <tbody>
                                             <tr>
                                                 <th scope="row">NP Membership</th>
-                                                <td>Profile Package <br>Chamber News Letter <br>Website Link</td>  
+                                                <td>                
+                                                    <ul>
+                                                        <li>Profile Package</li>
+                                                        <li>Chamber News Letter</li>
+                                                        <li>Website Link</li>
+                                                    </ul> 
+                                                </td>  
                                                 <td>Free</td>  
                                             </tr>
                                             <tr>
                                                 <th scope="row">Bronze Membership</th>
-                                                <td>All NP Options <br>Marketing Package <br>Chamber Deals </td>  
+                                                <td>
+                                                    <ul>
+                                                        <li>All NP Options</li>
+                                                        <li>Marketing Package</li>
+                                                        <li>Chamber Deals</li>
+                                                    </ul>
+                                                </td>  
                                                 <td>$50 USD</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Silver Membership</th>
-                                                <td>All Bronze Options<br> Forum Access<br>
-                                                Legal Services
+                                                <td>
+                                                    <ul>
+                                                        <li>All Bronze Options</li>
+                                                        <li>Forum Access</li>
+                                                        <li>Legal Services</li>
+                                                    </ul> 
+                                                </td>
                                                 <td>$80 USD</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Gold Membership</th>
-                                                <td>All Silver Options<br>Convention Access <br>Enhanced Profile<br>Enhanced Marketing
+                                                <td>
+                                                    <ul>
+                                                        <li>All Silver Options</li>
+                                                        <li>Convention Access</li>
+                                                        <li>Enhanced Profile</li>
+                                                        <li>Enhanced Marketing</li>
+                                                    </ul>  
+                                                </td>
                                                 <td>$110 USD</td>
                                             </tr>
                                             
@@ -161,14 +185,6 @@
                                 </table>
                             </Fieldset>
                         </div>
-
-
-
-
-
-
-
-
 
                         <fieldset id="memberRadioFieldset">
                             <legend>Choose Your Membership Level</legend>
@@ -183,7 +199,8 @@
                                 <input 
                                 type="radio" 
                                 name="membership" 
-                                id="2"
+                                id="2" 
+                                checked
                                 >  Bronze Membership
                             </label>
                             <label class="radioMembership">
