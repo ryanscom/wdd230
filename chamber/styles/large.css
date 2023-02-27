@@ -129,6 +129,11 @@ nav ul li:nth-child(5) {
   grid-template-columns: 1fr 1fr;
 }
 
+#joinMain form fieldset {
+  width: 30rem;
+  margin: 2rem auto;
+}
+
 .membershipsDescriptionContainer {
   grid-column: 2/3;
   float: left;

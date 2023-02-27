@@ -125,28 +125,51 @@
                         </fieldset>
 
                         <div class="membershipsDescriptionContainer">
-                            <fieldset id="membershipDiscFieldset">
+                            <fieldset>
                                 <Legend>Your Membership Options</Legend>
-                              
-                                    <div class="membershipDis">
-                                        <h3>NP Membership</h3>
-                                        <p>For non profit organizations. <span class="priceMembership">Free</span></p>
-                                    </div>
-                                    <div class="membershipDis">
-                                        <h3>Bronze Membership</h3>
-                                        <p>Add Insignias and news. <span class="priceMembership">$10USD</span></p>
-                                    </div>
-                                    <div class="membershipDis"> 
-                                        <h3>Silver Membership</h3>
-                                        <p>Get acces to law services.
-                                        <span class="priceMembership">$30USD</span></p>
-                                    </div>
-                                    <div class="membershipDis">
-                                        <h3>Gold Membership</h3>
-                                        <p> Get access to our database, free passes to our conventions.Your business displayed on the homepage.  <span>$40USD</span></p>
-                                    </div>
-                            </fieldset>
+                                <table class="memLevelTable">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" >Membership Level</th>
+                                            <th scope="col">What you get!</th>
+                                            <th scope="col">Cost Per Month</th>
+                                    </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">NP Membership</th>
+                                                <td>Profile Package <br>Chamber News Letter <br>Website Link</td>  
+                                                <td>Free</td>  
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Bronze Membership</th>
+                                                <td>All NP Options <br>Marketing Package <br>Chamber Deals </td>  
+                                                <td>$50 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Silver Membership</th>
+                                                <td>All Bronze Options<br> Forum Access<br>
+                                                Legal Services
+                                                <td>$80 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Gold Membership</th>
+                                                <td>All Silver Options<br>Convention Access <br>Enhanced Profile<br>Enhanced Marketing
+                                                <td>$110 USD</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                </table>
+                            </Fieldset>
                         </div>
+
+
+
+
+
+
+
+
+
                         <fieldset id="memberRadioFieldset">
                             <legend>Choose Your Membership Level</legend>
                             <label class="radioMembership">
@@ -185,14 +208,21 @@
                             type='submit'
                             value="Join the Chamber!">
                     </div>
-                    <input 
+                    <label hidden>localTime
+                        <input 
+                            type="hidden" 
+                            name="formDate" 
+                            id="formDate">
+                    </label>
+
+                    <!-- <input 
                         type="hidden" 
                         name="date" 
                         id="currentTime">
                     <input 
                         type="hidden" 
                         name="time" 
-                        id="formDate">
+                        id="formDate"> -->
                 </form>
       
             </main>

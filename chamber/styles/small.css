@@ -551,11 +551,13 @@ nav ul li a {
 }
 
 #joinMain form legend {
+   font-family: Arial, Helvetica, sans-serif;
    color: var(--extralightgreen);
    background-color: var(--darkgrey);
    margin: 0 2rem;
    padding: .2rem .5rem;
    border-radius: 4px;
+   font-size: 1.3em;
 }
 
 #joinMain form fieldset {
@@ -663,6 +665,51 @@ form label.membershipInfo input:required{
 
 form label.membershipInfo input:required:valid {
    background-color: rgba(94, 255, 0, 0.1);
+}
+
+
+
+/* Form Table *********** */
+
+
+table {
+   border-collapse: collapse;
+   margin: 0;
+   table-layout: fixed;
+}
+
+table.memLevelTable{
+   max-width: 100%;
+   display: block;
+}
+
+table th[scope='col'] {
+   border: 2px solid var(--darkgrey);
+   padding: 5px;
+   background-color: var(--darkgrey);
+   color: var(--extralightgreen);
+   font-size: 16px;
+}
+
+table th[scope='row'] {
+   border: 2px solid var(--darkgrey);
+   font-size: 16px;
+   padding: 10px;
+   text-align: left;
+}
+
+table td:nth-child(2) {
+   font-size: 14px;
+   text-align: left;
+}
+
+table td {
+   border: 2px solid var(--darkgrey);
+   font-size: 18px;
+   padding: 5px;
+   text-align: center;
+   /* height: 20px; */
+   /* width: 100%; */
 }
 
 
