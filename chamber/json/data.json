@@ -1,0 +1,140 @@
+{
+    "Members": [
+    {
+        "name": "Elevated Ice Cream Co. & Candy Shop",
+        "address": "631 Water St, Port Townsend, WA 98368",
+        "phone": "(360) 385-1156",
+        "website": "https://www.elevatedicecream.com/",
+        "level": "Gold",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    },
+    {
+        "name": "Pane d'Amore Artisan Bakery",
+        "address": "617 Tyler St, Port Townsend, WA 98368",
+        "phone": "(360) 385-2300",
+        "website": "https://www.panedamore.com/",
+        "level": "Silver",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    }, 
+    {
+        "name": "Key City Fish Company",
+        "address": "929 Water St, Port Townsend, WA 98368",
+        "phone": "(360) 379-5516",
+        "website": "https://www.keycityfish.com/",
+        "level": "Silver",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    }, 
+    {
+        "name": "Sirens Pub",
+        "address": "823 Water St, Port Townsend, WA 98368",
+        "phone": "(360) 379-1100",
+        "website": "https://sirenspub.com/",
+        "level": "Gold",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    }, 
+    {
+        "name": "Port Townsend Farmers Market",
+        "address": "Tyler St, Port Townsend, WA 98368",
+        "phone": "(360) 379-9098",
+        "website": "https://jcfmarkets.org/ptfm/",
+        "level": "NP",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    }, 
+    {
+        "name": "Velocity Coffee House",
+        "address": "431 Water St, Port Townsend, WA 98368",
+        "phone": "(360) 379-8025",
+        "website": "https://www.facebook.com/velocityporttownsend/",
+        "level": "Silver",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    }, 
+    {
+        "name": "Museum of Art and History",
+        "address": "540 Water St, Port Townsend, WA 98368",
+        "phone": "(360) 385-1013",
+        "website": "https://www.jchsmuseum.org/",
+        "level": "NP",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    },
+    {
+        "name": "Port Townsend Leader",
+        "address": "226 Adams St, Port Townsend, WA 98368",
+        "phone": "(360) 385-2900",
+        "website": "https://www.ptleader.com/",
+        "level": "NP",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    },
+    {
+        "name": "The Bishop Victorian Hotel",
+        "address": "Address: 714 Washington St, Port Townsend, WA 98368",
+        "phone": "(360) 385-6122",
+        "website": "https://www.bishopvictorian.com/",
+        "level": "Silver",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    }, 
+    {
+        "name": "Port Townsend Brewing Co.",
+        "address": "330 10th St, Port Townsend, WA 98368",
+        "phone": "(360) 385-9967",
+        "website": "https://www.porttownsendbrewing.com/",
+        "level": "Silver",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    },
+    {
+        "name": "Silverwater Cafe",
+        "address": "237 Taylor St, Port Townsend, WA 98368",
+        "phone": "(360) 385-6448",
+        "website": "https://www.silverwatercafe.com/",
+        "level": "Silver",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    },
+    {
+        "name": "The Spice and Tea Exchange",
+        "address": "929 Water St, Port Townsend, WA 98368",
+        "phone": "(360) 379-6810",
+        "website": "https://www.spiceandtea.com/port-townsend.html",
+        "level": "Bronze",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    },
+    {
+        "name": "The Rose Theatre",
+        "address": "235 Taylor St, Port Townsend, WA 98368",
+        "phone": "(360) 385-1089",
+        "website": "https://rosetheatre.com/",
+        "level": "Gold",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    },
+    {
+        "name": "The Food Co-op",
+        "address": "414 Kearney St, Port Townsend, WA 98368",
+        "phone": "(360) 385-2883",
+        "website": "https://foodcoop.coop/",
+        "level": "NP",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    },
+    {
+        "name": "The Port Townsend School of Woodworking",
+        "address": "200 Battery Way, Port Townsend, WA 98368",
+        "phone": "(360) 344-4455",
+        "website": "https://www.ptwoodschool.org/",
+        "level": "Silver",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    },
+    {
+        "name": "The Northwest Maritime Center",
+        "address": "431 Water St, Port Townsend, WA 98368",
+        "phone": "(360) 385-3628",
+        "website": "https://nwmaritime.org/",
+        "level": "NP",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    },
+    {
+        "name": "Fort Warden",
+        "address": "210 Battery Way, Port Townsend, WA 98368 ",
+        "phone": "360-344-4400",
+        "website": "https://fortworden.org/",
+        "level": "Gold",
+        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    }
+]}
+
