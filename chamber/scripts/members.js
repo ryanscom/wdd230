@@ -37,6 +37,8 @@ const displayMembers = (members) => {
         logo.setAttribute('width', '100');
         logo.setAttribute('height', '80');
 
+        website.setAttribute("href", member.website)
+
         // Append the section(card) with the created elements
         card.appendChild(logo);
         card.appendChild(h2);
