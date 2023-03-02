@@ -504,9 +504,10 @@ nav ul li a {
    background-color: rgb(46, 62, 40);
    padding-bottom: 5px;
 }
+
 .discoMain h1 {
    text-align: center;
-   background-color: #061400;
+   background-color: Black;
    border-bottom: 2px solid var(--lightgreen);
    margin: 0;
    padding-top: 20px;
@@ -702,6 +703,55 @@ tbody {
    color: var(--extralightgreen);
 }
 
+/* Directory Page ************** */
+
+/* #discoveryMain {
+   display: Block;
+   align-items: center;
+} */
+
+.directoryTitle {
+
+   background-color: var(--darkgrey);
+   color: var(--lightgreen);
+   text-align: center;
+   border-bottom: 2px solid var(--lightgreen);
+   padding: 2rem;
+   font-size: 25px;
+   margin: 0;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+div.infoCards {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+   margin: 0.25rem;
+   padding: 1rem 2rem 1rem 2rem;
+   background-color: var(--white-ish);
+   border: 2px solid #777;
+   display: flex;
+   flex-direction: column;
+   align-items: left;
+   border-radius: 5px;
+   overflow: hidden;
+}
+
+div.infoCards img {
+   align-self: center;
+   width: auto;
+}
+
+div.infoCards p {
+   margin: 0px 0 5px 0;
+}
+
+div.infoCards h2 {
+   margin: 10px 0 5px 0;
+}
 
 
 /* FOOTER ********** */

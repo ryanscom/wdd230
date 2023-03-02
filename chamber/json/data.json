@@ -25,14 +25,6 @@
         "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/fish.webp"
     }, 
     {
-        "name": "Sirens Pub",
-        "address": "823 Water St, Port Townsend, WA 98368",
-        "phone": "(360) 379-1100",
-        "website": "https://sirenspub.com/",
-        "level": "Gold",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/sirens.webp"
-    }, 
-    {
         "name": "Port Townsend Farmers Market",
         "address": "Tyler St, Port Townsend, WA 98368",
         "phone": "(360) 379-9098",
@@ -87,14 +79,6 @@
         "website": "https://www.silverwatercafe.com/",
         "level": "Silver",
         "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/silverwater.png"
-    },
-    {
-        "name": "The Spice and Tea Exchange",
-        "address": "929 Water St, Port Townsend, WA 98368",
-        "phone": "(360) 379-6810",
-        "website": "https://www.spiceandtea.com/port-townsend.html",
-        "level": "Bronze",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/spice-tea.webp"
     },
     {
         "name": "The Rose Theatre",

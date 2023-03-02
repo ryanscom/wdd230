@@ -91,20 +91,23 @@ if (numVisits !== 0) {
 numVisits++;
 localStorage.setItem('visitsLocStorage', numVisits);
 
-//Form Date Time Stamp ***********************************************************
-const formDate = document.querySelector('#formDate');
-formDate.value = 'date'
-const currentTime = document.querySelector('#currentTime');
-currentTime.value = date.getTime()
-// Calculate milliseconds in a year
-const minute = 1000 * 60;
-const hour = minute * 60;
-const day = hour * 24;
-const year = day * 365;
+// //Form Date Time Stamp ***********************************************************
+// const formDate = document.querySelector('#formDate');
+// formDate.value = 'date'
+// const currentTime = document.querySelector('#currentTime');
+// currentTime.value = date.getTime()
+// // Calculate milliseconds in a year
+// const minute = 1000 * 60;
+// const hour = minute * 60;
+// const day = hour * 24;
+// const year = day * 365;
 
-// Divide Time with a year
-const formDateStamp = new Date();
-let years = Math.round(formDateStamp.getTime() / year);
-// console.log(minute, hour, day, year, years)
+// // Divide Time with a year
+// const formDateStamp = new Date();
+// let years = Math.round(formDateStamp.getTime() / year);
+// // console.log(minute, hour, day, year, years)
 
-// let fromDate = document.getElementById('#formDate')formDate.value = date
+// // let fromDate = document.getElementById('#formDate')formDate.value = date
+
+
+
