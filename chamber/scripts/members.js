@@ -37,6 +37,7 @@ const displayMembers = (members) => {
         logo.setAttribute('width', '100');
         logo.setAttribute('height', '80');
 
+        // Build website link
         website.setAttribute("href", member.website)
 
         // Append the section(card) with the created elements
@@ -49,3 +50,21 @@ const displayMembers = (members) => {
         cards.appendChild(card);
     } // end of forEach loop
     )} // end of function expression
+
+
+// Change view between gid and list
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+gridbutton.addEventListener("click", () => {
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList);
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}

@@ -712,8 +712,8 @@ tbody {
 
 .directoryTitle {
 
-   background-color: var(--darkgrey);
-   color: var(--lightgreen);
+   background-color: black;
+   color: whitesmoke;
    text-align: center;
    border-bottom: 2px solid var(--lightgreen);
    padding: 2rem;
@@ -723,12 +723,84 @@ tbody {
    padding-bottom: 20px;
 }
 
-div.infoCards {
+div.directorSwitch {
+   display:block;
+   text-align: center;
+}
+
+div.directorSwitch button {
+   padding: 0;
+   background-color: var(--darkgray);
+}
+
+.directorySwitchIcon {
+   margin: 10px 5px 5px 5px;
+   border-radius: 5px;
+}
+
+/* .directorySwitchIcon:hover {
+   background-color: var(--green);
+   color: var(--darkgrey)
+} */
+
+.list div.infoCard {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   padding: auto;
+}
+
+.list section {
+   display:flex;
+   background-color: var(--white-ish);
+   border: 2px solid #777;
+   font-size: 1rem;
+   align-items: center;
+   border-radius: 5px;
+   max-width: 1000px;
+   margin: auto;
+}
+
+.list div.infoCards img {
+   display: none;
+}
+
+.list div.infoCards p {
+   margin: auto;
+}
+
+.list div.infoCards p:nth-child(1) {
+   padding: 5px;
+   grid-column: 2/3;
+   width: 25%;
+} 
+
+.list div.infoCards p:nth-child(2) {
+   grid-column: 3/4;
+   width: 25%;
+   padding: 5px;
+}
+
+.list div.infoCards h2 {
+   margin: 3px;
+   padding: 5px;
+   grid-column: 1/2;
+   font-size: 1rem;
+   width: 25%;
+}
+
+.list div.infoCards a {
+   padding: 5px;
+   grid-column: 4/5;
+   width: 25%;
+   align-self: right;
+}
+
+.grid div.infoCards {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-section {
+.grid section {
    margin: 0.25rem;
    padding: 1rem 2rem 1rem 2rem;
    background-color: var(--white-ish);
@@ -740,16 +812,16 @@ section {
    overflow: hidden;
 }
 
-div.infoCards img {
+.grid div.infoCards img {
    align-self: center;
    width: auto;
 }
 
-div.infoCards p {
+.grid div.infoCards p {
    margin: 0px 0 5px 0;
 }
 
-div.infoCards h2 {
+.grid div.infoCards h2 {
    margin: 10px 0 5px 0;
 }
 
