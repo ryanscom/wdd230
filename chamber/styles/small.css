@@ -766,8 +766,11 @@ div.directorSwitch button {
 
 .list div.infoCards p {
    margin: auto;
+   /* align-self: left; */
 }
 
+/* card.classList.add('direc-page') */
+/* link.setAttribute("target", "_blank"); */
 .list div.infoCards p:nth-child(1) {
    padding: 5px;
    grid-column: 2/3;
@@ -792,7 +795,7 @@ div.directorSwitch button {
    padding: 5px;
    grid-column: 4/5;
    width: 25%;
-   align-self: right;
+   /* align-self: right; */
 }
 
 .grid div.infoCards {
