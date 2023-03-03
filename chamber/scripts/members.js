@@ -12,7 +12,7 @@ async function getMemberData() {
 getMemberData();
 
 
-// card.classList.add('direc-page')
+
 // link.setAttribute("target", "_blank");
 
 const displayMembers = (members) => {
