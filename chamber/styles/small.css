@@ -738,6 +738,17 @@ div.directorSwitch button {
    border-radius: 5px;
 }
 
+.grid .moreBtn, .grid .lessBtn{
+   display:none;
+}
+
+.list .more {
+   display: none;
+}
+
+.hideDiv {
+   border: 5px solid red;
+}
 /* .directorySwitchIcon:hover {
    background-color: var(--green);
    color: var(--darkgrey)
@@ -745,7 +756,7 @@ div.directorSwitch button {
 
 .list div.infoCard {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 2fr 1fr 1fr;
    padding: auto;
 }
 
@@ -766,22 +777,19 @@ div.directorSwitch button {
 
 .list div.infoCards p {
    margin: auto;
-   /* align-self: left; */
 }
 
-/* card.classList.add('direc-page') */
-/* link.setAttribute("target", "_blank"); */
-.list div.infoCards p:nth-child(1) {
+/* .list div.infoCards p:nth-child(1) {
    padding: 5px;
    grid-column: 2/3;
    width: 25%;
-} 
+}  */
 
-.list div.infoCards p:nth-child(2) {
+/* .list div.infoCards p:nth-child(2) {
    grid-column: 3/4;
    width: 25%;
    padding: 5px;
-}
+}  */
 
 .list div.infoCards h2 {
    margin: 3px;
@@ -797,6 +805,18 @@ div.directorSwitch button {
    width: 25%;
    /* align-self: right; */
 }
+
+/* .list .hideDiv p, .list .hideDiv a{
+   display: none;
+} */
+
+/* .list .more a{
+   display: none;
+}
+
+.list .less a{
+   display: none;
+} */
 
 .grid div.infoCards {
    display: grid;
