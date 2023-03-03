@@ -705,13 +705,7 @@ tbody {
 
 /* Directory Page ************** */
 
-/* #discoveryMain {
-   display: Block;
-   align-items: center;
-} */
-
 .directoryTitle {
-
    background-color: black;
    color: whitesmoke;
    text-align: center;
@@ -742,23 +736,22 @@ div.directorSwitch button {
    display:none;
 }
 
-.list .more {
-   display: none;
-}
 
-.hideDiv {
-   border: 5px solid red;
-}
 /* .directorySwitchIcon:hover {
    background-color: var(--green);
    color: var(--darkgrey)
 } */
 
-.list div.infoCard {
+.hide-detailsBtn {
+   display: none;
+ }
+
+
+/* .list div.infoCards {
    display: grid;
    grid-template-columns: 2fr 1fr 1fr;
    padding: auto;
-}
+} */
 
 .list section {
    display:flex;
@@ -771,6 +764,19 @@ div.directorSwitch button {
    margin: auto;
 }
 
+.list .less {
+   display: none;
+   /* padding: auto; */
+   /* align-content: start; */
+}
+
+.list .more{
+   display: block;
+   /* padding: auto; */
+   padding: 50px;
+   /* align-content: start; */
+}
+
 .list div.infoCards img {
    display: none;
 }
@@ -779,44 +785,36 @@ div.directorSwitch button {
    margin: auto;
 }
 
-/* .list div.infoCards p:nth-child(1) {
-   padding: 5px;
-   grid-column: 2/3;
-   width: 25%;
-}  */
-
-/* .list div.infoCards p:nth-child(2) {
-   grid-column: 3/4;
-   width: 25%;
-   padding: 5px;
-}  */
-
 .list div.infoCards h2 {
    margin: 3px;
    padding: 5px;
-   grid-column: 1/2;
    font-size: 1rem;
    width: 25%;
 }
 
-.list div.infoCards a {
+/* .list div.infoCards .openedCardStyling {
+   display:flex;
+   border: 5px solid red;
+ } */
+
+
+
+.list div.infoCards .moreBtn, .list div.infoCards .lessBtn{
+   margin: 3px;
    padding: 5px;
-   grid-column: 4/5;
+   font-size: 1.2rem;
    width: 25%;
-   /* align-self: right; */
 }
 
-/* .list .hideDiv p, .list .hideDiv a{
-   display: none;
-} */
-
-/* .list .more a{
-   display: none;
+.moreBtn, .lessBtn{
+   color: rgb(202, 35, 35);
+   border: none;
+   background-color: var(--white-ish);
 }
 
-.list .less a{
-   display: none;
-} */
+.moreBtn:hover, .lessBtn:hover{
+   color: black;
+}
 
 .grid div.infoCards {
    display: grid;
