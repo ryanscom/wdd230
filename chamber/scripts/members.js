@@ -28,7 +28,7 @@ const displayMembers = (members) => {
     moreBtn.classList.add('moreBtn');
     lessBtn.classList.add('lessBtn');
     lessBtn.classList.add('hide-detailsBtn');
-    // card.classList.add('openedCardStyling');
+    card.classList.add(`CardStyling${i}`);
     detailsDiv.classList.add('less');
     detailsDiv.classList.add(`hideDiv${i}`);
 
@@ -66,12 +66,19 @@ const displayMembers = (members) => {
           const displayStuff = document.querySelector(`.hideDiv${i}`);
           displayArray.push(displayStuff);
         }
+
+        const displayCardStylingArray = [];
+        for (let i = 1; i <= 15; i++) {
+          const displayCardStyling = document.querySelector(`.CardStyling${i}`);
+          displayCardStylingArray.push(displayCardStyling);
+        }
       
         for (let i = 0; i < mBtnArray.length; i++) {
           mBtnArray[i].addEventListener("click", () => {
             displayArray[i].classList.add("more");
             displayArray[i].classList.remove("less");
-            card.classList.add('openedCardStyling');
+            displayCardStylingArray[i].classList.add('doCardStyling');
+            displayCardStylingArray[i].classList.remove('dontCardStyling');
             mBtnArray[i].classList.add("hide-detailsBtn");
             lBtnArray[i].classList.remove("hide-detailsBtn");
           });
@@ -81,7 +88,8 @@ const displayMembers = (members) => {
             lBtnArray[i].addEventListener("click", () => {
               displayArray[i].classList.add("less");
               displayArray[i].classList.remove("more");
-              card.classList.remove('openedCardStyling');
+              displayCardStylingArray[i].classList.add('dontCardStyling');
+              displayCardStylingArray[i].classList.remove('doCardStyling');
               lBtnArray[i].classList.add("hide-detailsBtn");
               mBtnArray[i].classList.remove("hide-detailsBtn");
             });
@@ -95,6 +103,11 @@ const display = document.querySelector(".hide");
 
 gridbutton.addEventListener("click", () => {
   display.classList.add("grid");
+  if (display.classList.contains('list')){ 
+    const gridIcons = gridbutton.querySelectorAll('.directorySwitchIcon');
+    const listIcons = listbutton.querySelectorAll('.directorySwitchIcon');
+    gridIcons.forEach(icon => icon.classList.toggle('hidden'));
+    listIcons.forEach(icon => icon.classList.toggle('hidden'))};
   display.classList.remove("list");
 });
 
@@ -102,6 +115,12 @@ listbutton.addEventListener("click", showList);
 
 function showList() {
   display.classList.add("list");
+  
+  if (display.classList.contains('grid')) {
+    const listIcons = listbutton.querySelectorAll('.directorySwitchIcon');
+    const gridIcons = gridbutton.querySelectorAll('.directorySwitchIcon');
+    gridIcons.forEach(icon => icon.classList.toggle('hidden'));
+    listIcons.forEach(icon => icon.classList.toggle('hidden'))};
   display.classList.remove("grid");
 }
 
