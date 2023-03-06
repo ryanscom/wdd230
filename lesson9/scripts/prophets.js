@@ -43,3 +43,5 @@ const displayProphets = (prophets) => {
       cards.appendChild(card);
     } // end of forEach loop
   )} // end of function expression
+
+

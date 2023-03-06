@@ -1,0 +1,17 @@
+
+
+body {
+    background-color: black;
+    color: yellowgreen;
+    width: 900px;
+    margin: auto;
+}
+
+main {
+    text-align: center;
+    margin: 10rem;
+}
+
+footer {
+    text-align: center;
+}
