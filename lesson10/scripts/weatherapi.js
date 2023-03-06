@@ -1,7 +1,5 @@
 const weatherurl = 'http://api.openweathermap.org/data/2.5/weather?q=Fairbanks,AK,3166-2:US,units=imperial&APPID=77afa667ff8babd83fe8b450d3d5dfb8';
 
-// http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=77afa667ff8babd83fe8b450d3d5dfb8
-// id=524901
 
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');

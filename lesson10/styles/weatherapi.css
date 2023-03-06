@@ -2,7 +2,7 @@
 
 body {
     background-color: black;
-    color: yellowgreen;
+    color: lightskyblue;
     width: 900px;
     margin: auto;
 }
@@ -10,6 +10,17 @@ body {
 main {
     text-align: center;
     margin: 10rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+img {
+    Background-color: darkblue;
+    padding: 5px;
+    border-radius: 3px;
+    border: 2px solid blue;
 }
 
 footer {
