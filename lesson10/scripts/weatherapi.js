@@ -1,4 +1,4 @@
-const weatherurl = 'http://api.openweathermap.org/data/2.5/weather?q=Fairbanks,AK,3166-2:US,units=imperial&APPID=77afa667ff8babd83fe8b450d3d5dfb8';
+const weatherurl = 'http://api.openweathermap.org/data/2.5/weather?q=Fairbanks,AK,3166-2:US,&units=imperial&APPID=77afa667ff8babd83fe8b450d3d5dfb8';
 
 
 // select HTML elements in the document
@@ -24,14 +24,17 @@ async function apiFetch() {
   
   apiFetch();
 
+// function to capitialize first letter of a word. 
+function capitalize(str) {return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+
 //   function displayResults(weatherData)
   function  displayResults(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(1)}</strong>`;
+    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
   
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
   
     weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
+    weatherIcon.setAttribute('alt', capitalize(desc));
+    captionDesc.textContent = capitalize(desc);
   }
