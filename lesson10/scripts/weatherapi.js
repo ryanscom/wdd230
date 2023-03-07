@@ -38,3 +38,4 @@ function capitalize(str) {return str.split(' ').map(word => word.charAt(0).toUpp
     weatherIcon.setAttribute('alt', capitalize(desc));
     captionDesc.textContent = capitalize(desc);
   }
+  
