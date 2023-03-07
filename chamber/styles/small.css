@@ -353,15 +353,53 @@ nav ul li a {
 #weather {
    border: 2px solid var(--green); 
    color: white;
-   background-color: rgb(3, 12, 131);
+   background-color: var(--black);
    margin-top: 5px;
    height: 200px;
 }
 
 #weather h3 {
   padding-top: 10px;
+  margin: 0 0 5px 0;
 }
 
+#weather img {
+   padding: 5px;
+   margin: 0;
+   background-color: blue;
+   border-radius: 5px;
+   border: 3px solid var(--lightgreen);
+ }
+
+ #weather figure {
+   margin: 10px auto 5px auto; 
+ }
+
+ #weather figcaption {
+   border-top: 2px solid var(--darkgrey);
+   padding-top: 5px;
+   margin: 0;
+ }
+
+#weather p {
+   padding-top: 5px;
+   margin: 0;
+ }
+
+ #weather div p {
+   margin: 0 auto; 
+ }
+
+ .tempDiv {
+   display: flex;
+   align-items: center;
+   padding: auto;
+ }
+
+ .tempDiv p {
+   font-size: 2rem;
+ }
+ 
 #news {
    border: 2px solid var(--green); 
    background-color: rgb(38, 41, 38);

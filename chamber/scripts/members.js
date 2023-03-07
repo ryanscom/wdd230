@@ -1,11 +1,13 @@
  
 const url = 'https://ryanscom.github.io/wdd230/chamber/json/data.json';
 
+// function to get member data from json file
 async function getMemberData() {
   const response = await fetch(url);
   const data = await response.json();
   displayMembers(data.Members);
 }
+
 
 const displayMembers = (members) => {
   const cards = document.querySelector('div.infoCards');
