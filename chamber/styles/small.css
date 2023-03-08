@@ -353,7 +353,7 @@ nav ul li a {
 #weather {
    border: 2px solid var(--green); 
    color: white;
-   background-color: var(--black);
+   background-color: rgb(38, 41, 38);;
    margin-top: 5px;
    height: 200px;
 }
