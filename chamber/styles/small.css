@@ -399,7 +399,7 @@ nav ul li a {
  .tempDiv p {
    font-size: 2rem;
  }
- 
+
 #news {
    border: 2px solid var(--green); 
    background-color: rgb(38, 41, 38);
@@ -414,22 +414,38 @@ nav ul li a {
    padding: 5px 5px 5px 5px;
 }
 
-#spotlight1 {
+#spotlight1, #spotlight2, #spotlight3{
    border: 2px solid var(--black);
-   background-color:  rgb(38, 41, 38);
+   background-color:  var(--background-cream);
    margin-top: 0px;
    height: 200px; 
-   color: white;
-   display: Grid;
-   grid-template-columns: 1fr 1fr;
+   color: var(--black);
+  
 }
 
-#wilderSecOne {
+#spotlight1 img, #spotlight2 img, #spotlight3 img {
+   height: 4rem;
+   margin: 5px 0 0 0;
+}
+
+#spotlight1 h3, #spotlight2 h3, #spotlight3 h3{
+   margin: 0;
+}
+#spotlight1 p, #spotlight2 p, #spotlight3 p{
+   margin: 0;
+}
+
+#spotlight3 {
+   display: none;
+}
+
+
+/* #wilderSecOne {
    padding-top: 35px;
    grid-column: 2/3; 
    grid-row: 1/2;
    padding-right: 50px;
-   /* padding-bottom: -15px; */
+   
 }
 
 #wilderSecTwo p{
@@ -439,7 +455,7 @@ nav ul li a {
 #WilderSecTwo {
    grid-column: 1/2;
    grid-row: 1/2;
-   /* padding-bottom: -15px; */
+  
 }
 
 #wilderSecThree {
@@ -454,20 +470,20 @@ nav ul li a {
 
 #wilderSecThree a:hover {
    color: var(--white-ish);
-}
+} */
 
-#spotlight2 {
+/* #spotlight2 {
    border: 2px solid var(--black); 
    background-color: rgb(248, 222, 243);
    margin-top: 5px;
    height: 200px;
-}
+} */
 
-#spotlight2 h3{
+/* #spotlight2 h3{
    padding-top: 10px;
-}
+} */
 
-#spotlight3 {
+/* #spotlight3 {
    display: none;
    border: 2px solid var(--black); 
    background-image: url('../images/windows.webp');
@@ -476,7 +492,7 @@ nav ul li a {
    margin-top: 5px;
    height: 200px;
    color: white; 
-}
+} */
 
 #fortWorden {
    background-color: rgba(0, 0, 0, 0.4);
