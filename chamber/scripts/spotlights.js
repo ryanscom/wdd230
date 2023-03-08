@@ -15,35 +15,75 @@ async function getGoldMemberData() {
     // Get the first three shuffled members
     const randomMembers = goldMembers.slice(0, 3);
 
-    // Get the divs to display the members
     const spotlight1 = document.getElementById('spotlight1');
     const spotlight2 = document.getElementById('spotlight2');
     const spotlight3 = document.getElementById('spotlight3');
+    
+    // Set the contents of each div to the specific member's information
 
-    // Set the contents of each div to the respective member's information
-    spotlight1.innerHTML = `
-    <img>${randomMembers[0].imageurl ? `<img src="${randomMembers[0].imageurl}" alt="${randomMembers[0].name}">` : ''}
-    <h3>${randomMembers[0].name}</h3>
-    <p>${randomMembers[0].phone}</p>
-    <p>${randomMembers[0].address}</p>
-    <a>${randomMembers[0].website}</a>
-    `;
+    // If member has an image url then create and img element and set it's attributes.  
+    if (randomMembers[0].imageurl) {
+      const spotlight1Image = document.createElement('img');
+      // set the image attributes
+      spotlight1Image.setAttribute('src', randomMembers[0].imageurl);
+      spotlight1Image.setAttribute('alt', randomMembers[0].name);
+      spotlight1.appendChild(spotlight1Image);
+    }
 
-    spotlight2.innerHTML = `
-    <img>${randomMembers[1].imageurl ? `<img src="${randomMembers[1].imageurl}" alt="${randomMembers[1].name}">` : ''}
-    <h3>${randomMembers[1].name}</h3>
-    <p>${randomMembers[1].phone}</p>
-    <p>${randomMembers[1].address}</p>
-    <a>${randomMembers[1].website}</a>
-    `;
+    // create the elements and append the member information to the div for name, phone, address
+    spotlight1.appendChild(document.createElement('h3')).textContent = randomMembers[0].name;
+    spotlight1.appendChild(document.createElement('p')).textContent = randomMembers[0].phone;
+    spotlight1.appendChild(document.createElement('p')).textContent = randomMembers[0].address;
+    
+     if (randomMembers[0].website) {
+        const spotlight1Website = document.createElement('a');
+        // set the website attributes
+        spotlight1Website.setAttribute("href", randomMembers[0].website);
+        spotlight1Website.textContent = randomMembers[0].website;
+        spotlight1.appendChild(spotlight1Website);   
+      }
+    
+    // If member has an image url then create and img element and set it's attributes. 
+    if (randomMembers[1].imageurl) {
+      const spotlight2Image = document.createElement('img');
+      // set the image attributes
+      spotlight2Image.setAttribute('src', randomMembers[1].imageurl);
+      spotlight2Image.setAttribute('alt', randomMembers[1].name);
+      spotlight2.appendChild(spotlight2Image);
+    }
+    // create the elements and append the member information to the div for name, phone, address.
+    spotlight2.appendChild(document.createElement('h3')).textContent = randomMembers[1].name;
+    spotlight2.appendChild(document.createElement('p')).textContent = randomMembers[1].phone;
+    spotlight2.appendChild(document.createElement('p')).textContent = randomMembers[1].address;
 
-    spotlight3.innerHTML = `
-    <img>${randomMembers[2].imageurl ? `<img src="${randomMembers[2].imageurl}" alt="${randomMembers[2].name}">` : ''}
-    <h3>${randomMembers[2].name}</h3>
-    <p>${randomMembers[2].phone}</p>
-    <p>${randomMembers[2].address}</p>
-    <a>${randomMembers[2].website}</a>
-    `;
+    if (randomMembers[1].website) {
+        const spotlight2Website = document.createElement('a');
+        // set the website attributes
+        spotlight2Website.setAttribute("href", randomMembers[1].website);
+        spotlight2Website.textContent = randomMembers[1].website;
+        spotlight2.appendChild(spotlight2Website);   
+      }
+    
+    // If member has an image url then create and img element and set it's attributes. 
+    if (randomMembers[2].imageurl) {
+      const spotlight3Image = document.createElement('img');
+      // set the image attributes
+      spotlight3Image.setAttribute('src', randomMembers[2].imageurl);
+      spotlight3Image.setAttribute('alt', randomMembers[2].name);
+      spotlight3.appendChild(spotlight3Image);
+    }
+    // create the elements and append the member information to the div for name, phone, address. 
+    spotlight3.appendChild(document.createElement('h3')).textContent = randomMembers[2].name;
+    spotlight3.appendChild(document.createElement('p')).textContent = randomMembers[2].phone;
+    spotlight3.appendChild(document.createElement('p')).textContent = randomMembers[2].address;
+
+    if (randomMembers[2].website) {
+        const spotlight3Website = document.createElement('a');
+        // set the website attributes
+        spotlight3Website.setAttribute("href", randomMembers[2].website);
+        spotlight3Website.textContent = randomMembers[2].website;
+        spotlight3.appendChild(spotlight3Website);   
+      }
 }
 
 getGoldMemberData()

@@ -123,8 +123,8 @@ gridbutton.addEventListener("click", () => {
     const listIcons = listbutton.querySelectorAll('.directorySwitchIcon');
     gridIcons.forEach(icon => icon.classList.toggle('hidden'));
     listIcons.forEach(icon => icon.classList.toggle('hidden'))};
-  // remove "list" class from display element
-  display.classList.remove("list");
+    // remove "list" class from display element
+    display.classList.remove("list");
 });
 
 listbutton.addEventListener("click", showList);
@@ -138,8 +138,8 @@ function showList() {
     const gridIcons = gridbutton.querySelectorAll('.directorySwitchIcon');
     gridIcons.forEach(icon => icon.classList.toggle('hidden'));
     listIcons.forEach(icon => icon.classList.toggle('hidden'))};
-  // remove "grid" class from display element 
-  display.classList.remove("grid");
+    // remove "grid" class from display element 
+    display.classList.remove("grid");
 }
 
 getMemberData();
