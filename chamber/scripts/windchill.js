@@ -2,7 +2,7 @@
 const cityName = 'Port+Townsend'
 const APIkey = '77afa667ff8babd83fe8b450d3d5dfb8'
 const stateAb = 'WA'
-const weatherurl = `http://api.openweathermap.org/data/2.5/weather?q=${cityName},${stateAb}3166-2:US&appid=${APIkey}&units=imperial`;
+const weatherurl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName},${stateAb}3166-2:US&appid=${APIkey}&units=imperial`;
 // const weatherurl = "http://api.openweathermap.org/data/2.5/weather?q=Port+Townsend,WA3166-2:US&appid=77afa667ff8babd83fe8b450d3d5dfb8&units=imperial&";
 
 // select HTML elements in the document
