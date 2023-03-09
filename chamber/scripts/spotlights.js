@@ -35,6 +35,7 @@ async function getGoldMemberData() {
     spotlight1.appendChild(document.createElement('p')).textContent = randomMembers[0].phone;
     spotlight1.appendChild(document.createElement('p')).textContent = randomMembers[0].address;
     
+    // If member has website info then create an "a" element and set it's attributes.
      if (randomMembers[0].website) {
         const spotlight1Website = document.createElement('a');
         // set the website attributes
@@ -56,6 +57,7 @@ async function getGoldMemberData() {
     spotlight2.appendChild(document.createElement('p')).textContent = randomMembers[1].phone;
     spotlight2.appendChild(document.createElement('p')).textContent = randomMembers[1].address;
 
+    // If member has website info then create an "a" element and set it's attributes.
     if (randomMembers[1].website) {
         const spotlight2Website = document.createElement('a');
         // set the website attributes
@@ -77,6 +79,7 @@ async function getGoldMemberData() {
     spotlight3.appendChild(document.createElement('p')).textContent = randomMembers[2].phone;
     spotlight3.appendChild(document.createElement('p')).textContent = randomMembers[2].address;
 
+    // If member has website info then create an "a" element and set it's attributes.
     if (randomMembers[2].website) {
         const spotlight3Website = document.createElement('a');
         // set the website attributes

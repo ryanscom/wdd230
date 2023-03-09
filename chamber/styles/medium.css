@@ -194,7 +194,11 @@ form input.submitBtn {
   border-radius: 0px 0px 15px 15px;
 }
 
-
+/* Contact Page ********** */
+#contactMain form input.submitBtn {
+  padding: .75rem;
+  width: 100%;
+}
 
  /* FOOTER ********** */
 .footerlogo{

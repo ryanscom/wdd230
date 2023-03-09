@@ -6,7 +6,7 @@
         "phone": "(360) 385-1156",
         "website": "https://www.elevatedicecream.com/",
         "level": "Gold",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/elevated-icecream-co.png"
+        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/elevated-icecream-co.webp"
     },
     {
         "name": "Pane d'Amore Artisan Bakery",
@@ -14,7 +14,7 @@
         "phone": "(360) 385-2300",
         "website": "https://www.panedamore.com/",
         "level": "Silver",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/pane.jpg"
+        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/pane.webp"
     }, 
     {
         "name": "Key City Fish Company",
@@ -30,7 +30,7 @@
         "phone": "(360) 379-9098",
         "website": "https://jcfmarkets.org/",
         "level": "Gold",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/farmers-market.png"
+        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/farmers-market.webp"
     }, 
     {
         "name": "Velocity Coffee House",
@@ -38,7 +38,7 @@
         "phone": "(360) 379-8025",
         "website": "https://www.facebook.com/velocityporttownsend/",
         "level": "Silver",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/velocity.png"
+        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/velocity.webp"
     }, 
     {
         "name": "Museum of Art and History",
@@ -46,7 +46,7 @@
         "phone": "(360) 385-1013",
         "website": "https://www.jchsmuseum.org/",
         "level": "NP",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/museum.png"
+        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/museum.webp"
     },
     {
         "name": "Port Townsend Leader",
@@ -54,7 +54,7 @@
         "phone": "(360) 385-2900",
         "website": "https://www.ptleader.com/",
         "level": "NP",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/the-leader.png"
+        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/the-leader.webp"
     },
     {
         "name": "The Bishop Victorian Hotel",
@@ -62,7 +62,7 @@
         "phone": "(360) 385-6122",
         "website": "https://www.bishopvictorian.com/",
         "level": "Silver",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/bishop.png"
+        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/bishop.webp"
     }, 
     {
         "name": "Port Townsend Brewing Co.",
@@ -70,7 +70,7 @@
         "phone": "(360) 385-9967",
         "website": "https://www.porttownsendbrewing.com/",
         "level": "Gold",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/port-townsend-brewing.png"
+        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/port-townsend-brewing.webp"
     },
     {
         "name": "Silverwater Cafe",
@@ -78,7 +78,7 @@
         "phone": "(360) 385-6448",
         "website": "https://www.silverwatercafe.com/",
         "level": "Silver",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/silverwater.png"
+        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/silverwater.webp"
     },
     {
         "name": "The Rose Theatre",
@@ -86,7 +86,7 @@
         "phone": "(360) 385-1089",
         "website": "https://rosetheatre.com/",
         "level": "Gold",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/rose.svg"
+        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/rose.webp"
     },
     {
         "name": "The Food Co-op",
@@ -94,7 +94,7 @@
         "phone": "(360) 385-2883",
         "website": "https://foodcoop.coop/",
         "level": "Gold",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/food-co-op.png"
+        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/food-co-op.webp"
     },
     {
         "name": "The Port Townsend School of Woodworking",
@@ -102,7 +102,7 @@
         "phone": "(360) 344-4455",
         "website": "https://www.ptwoodschool.org/",
         "level": "Bronze",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/woodworking.jpg"
+        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/woodworking.webp"
     },
     {
         "name": "The Northwest Maritime Center",
@@ -110,7 +110,7 @@
         "phone": "(360) 385-3628",
         "website": "https://nwmaritime.org/",
         "level": "Gold",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/NWMC.png"
+        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/NWMC.webp"
     },
     {
         "name": "Fort Worden",
@@ -118,7 +118,7 @@
         "phone": "(360) 344-4400",
         "website": "https://fortworden.org/",
         "level": "Gold",
-        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/fort-warden.png"
+        "imageurl": "https://ryanscom.github.io/wdd230/chamber/images/b-logos/fort-warden.webp"
     }
 ]}
 
