@@ -959,6 +959,7 @@ footer div div a:hover{
  #sourcesMain section H2, #sourcesMain section H3 {
    color: white;
    border-bottom: 2px solid var(--grey);
+   padding-top: 20px;
  }
 
 /* PAGE CONTAINER ********** */
