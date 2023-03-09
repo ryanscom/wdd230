@@ -195,9 +195,12 @@ form input.submitBtn {
 }
 
 /* Contact Page ********** */
-#contactMain form input.submitBtn {
-  padding: .75rem;
-  width: 100%;
+
+#contactMain .submitBtnDiv {
+  text-align: left;
+}
+#contactMain .submitBtn {
+  margin-bottom: 0;
 }
 
  /* FOOTER ********** */

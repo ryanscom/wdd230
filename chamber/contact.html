@@ -76,58 +76,64 @@
                     <form method="get" action="thankyou.html">
                         <fieldset id="memberInfoFieldset">
                             <Legend>Contact Form</Legend>
-                            <label class="memberInfo" for="name">Name:<span class="redStar">*</span>
-                                <input 
-                                    type="text" 
-                                    id="name" 
-                                    name="name" 
-                                    pattern="^[A-Za-z ]*$"
+                            <div class="contactRestrictDiv">
+                                <label class="memberInfo" for="name">Name:<span class="redStar">*</span>
+                                    <input 
+                                        type="text" 
+                                        id="name" 
+                                        name="name" 
+                                        pattern="^[A-Za-z ]*$"
+                                        required
+                                        >
+                                </label>
+                                <label class="memberInfo" for="email">E-mail:<span class="redStar">*</span>
+                                    <input 
+                                        id="email"
+                                        type="email" 
+                                        placeholder="username@email.com"
+                                        required>
+                                </label>
+                                <label class="memberInfo" for="phone">Phone number:<span class="redStar">*</span>
+                                    <input 
+                                        type="tel" 
+                                        id="phone"
+                                        name="phone"
+                                        minlength="7"
+                                        placeholder="1235556789"
+                                        pattern="[0-9]{10}"
+                                        title="Phone number must be ten characters"
+                                        required
+                                        >
+                                </label>
+                                <label class="textareaLabel memberInfo" for="comments">Question/Concern:<span class="redStar">*</span>
+                                    <textarea 
+                                    id="comments"
+                                    name="comments" 
+                                    rows="4" 
+                                    cols="30"
                                     required
-                                    >
-                            </label>
-                            <label class="memberInfo" for="email">E-mail:<span class="redStar">*</span>
-                                <input 
-                                    id="email"
-                                    type="email" 
-                                    placeholder="username@email.com"
-                                    required>
-                            </label>
-                            <label class="memberInfo" for="phone">Phone number:<span class="redStar">*</span>
-                                <input 
-                                    type="tel" 
-                                    id="phone"
-                                    name="phone"
-                                    minlength="7"
-                                    placeholder="1235556789"
-                                    pattern="[0-9]{10}"
-                                    title="Phone number must be ten characters"
-                                    required
-                                    >
-                            </label>
-                            <label class="textareaLabel memberInfo" for="comments">Question/Concern:<span class="redStar">*</span>
-                                <textarea 
-                                id="comments"
-                                name="comments" 
-                                rows="4" 
-                                cols="30"
-                                required
-                                ></textarea>
-                            </label>
-                            <div class="submitBtnDiv">
-                                <input class="submitBtn" 
-                                    type='submit'
-                                    value="Send your question!">
+                                    ></textarea>
+                                </label>
+                                <div class="submitBtnDiv">
+                                    <input class="submitBtn" 
+                                        type='submit'
+                                        value="Send us your questions!">
+                                </div>
                             </div>
                         </fieldset>
-
-                    <h3>Port Townsend Chamber of Commerce</h3>
+                </div>
+                <div class="contactVisitDiv">
+                    <h3>Visit Us</h3>
+                    <h4>Port Townsend Chamber of Commerce</h4>
                     <p >
                         2409 Jefferson Street <br>
                         Port Townsend, Washington 98368 <br>
                         360.385.7869 <br>
                         director@porttownsendchamber.org <br><br>
                     </p>
+                    <P>Monday – Thursday: 9:00 a.m. to 4:30 p.m.<br>Friday: By Appointment Only</P>
                 </div>
+                
             </main>
         </div>
         <footer id="footer">

@@ -822,6 +822,7 @@ div.directorSwitch button {
 /* Contact page ********** */
 #contactMain {
    color: white;
+   font-family: var(--robo);
 }
 
 #contactMain form legend {
@@ -836,30 +837,35 @@ div.directorSwitch button {
 
 #contactMain form fieldset {
    color: black;
-   margin: 2rem 0;
+   /* margin: 2rem 0; */
+   margin: 50px auto;
    border: 5px solid var(--green); 
    border-radius: 10px;
    padding: .5rem 2% 0 2%;
    background-color: var(--white-ish);
-   max-width: 400px;
+   max-width: 375px;
    display: block;
 }
 
-#contactMain form label {
+#contactMain form label.memberInfo {
    display:block;
+}
+.contactRestrictDiv {
+   max-width: 375px;
 }
 
 #contactMain form label input, #contactMain form label textarea{
    border: solid 2px var(--darkgrey);
    border-radius: 4px;
-   padding: .75rem;
+   padding: .75rem .75rem .75rem .75rem;
    color: #555;
    width: 100%;
-   max-width: 20rem;
+   max-width: 18.5rem;
    background-color: rgba(0, 0, 0, 0.1);
 }
 
 #contactMain form input.submitBtn {
+   border: 2px solid var(--darkgrey);
    padding: .75rem;
    width: 100%;
 }
@@ -874,109 +880,24 @@ div.directorSwitch button {
    padding: 2px 0;
 }
 
-/* form .radioMembership{
-   display: Block;
-   padding-top: 1rem;
-   color: black;
-   font-size: .9rem;
-   font-family: Arial, Helvetica, sans-serif;
-}
-label.membershipInfo textarea{
-   margin-bottom: 1rem;
-}
-
-form label.membershipInfo input, label.membershipInfo textarea{ 
-   display: block;
-   font-size: 1rem;
-   border: solid 2px var(--darkgrey);
-   border-radius: 4px;
+.contactVisitDiv {
    padding: .75rem;
-   color: #555;
    width: 100%;
    max-width: 20rem;
    background-color: rgba(0, 0, 0, 0.1);
+   margin: 50px auto;
 }
 
 
-
-#joinMain form fieldset:nth-child(3) {
-   margin-bottom: 0;
- }
-
- .submitBtnDiv {
-   margin-top: -10px;
-   margin-left: 2.5rem;
- }
-
-form input.submitBtn {
-   border: none;
-   background-color: var(--green);
-   color: white;
-   font-size: 1.5rem;
-   border-radius: 1rem;
-   padding: .75rem 1.5rem;
-   width: 96%;
-   max-width: 20rem;
-}
-
-form input.submitBtn:hover {
-   background-color: var(--extralightgreen);
-   color: Black;
-}
-
-
-form label.membershipInfo input:required{
+#contactMain form label.memberInfo input:required, #contactMain form label.memberInfo textarea:required{
    background-color: rgba(255, 1, 1, 0.1);
 }
 
-form label.membershipInfo input:required:valid {
+#contactMain form label.memberInfo input:required:valid, #contactMain form label.memberInfo textarea:valid {
    background-color: rgba(94, 255, 0, 0.1);
-} */
-
-/* Form Table *********** */
-/* table {
-   border-collapse: collapse;
-   table-layout: fixed;
 }
 
-table.memLevelTable{
-   margin-top: 1rem;
-   margin-bottom: 1rem;
-   max-width: 100%;
-   display: block;
-}
 
-table th[scope='col'] {
-   border: 2px solid var(--darkgrey);
-   padding: 5px;
-   background-color: var(--darkgrey);
-   color: var(--extralightgreen);
-   font-size: 16px;
-}
-
-table th[scope='row'] {
-   border: 2px solid var(--darkgrey);
-   font-size: 16px;
-   padding: 10px;
-   text-align: left;
-}
-
-table td:nth-child(2) {
-   font-size: 14px;
-   text-align: left;
-   padding-right: 20px;
-}
-
-table td {
-   border: 2px solid var(--darkgrey);
-   font-size: 18px;
-   padding: 5px;
-   text-align: center;
-}
-
-tbody {
-   margin-bottom: 30px;
-} */
 /* FOOTER ********** */
 footer {
    display: block;

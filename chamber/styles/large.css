@@ -165,4 +165,17 @@ form label.membershipInfo input, label.membershipInfo textarea{
   grid-column: 1/2
 }
 
+/* Contact Page ********** */
+#contactMain{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
+
+.contactVisitDiv {
+  border-left: solid 2px var(--darkgrey);
+  border-radius: 0;
+  margin: auto;
+  padding-left: 30px;
+}
+
 }
