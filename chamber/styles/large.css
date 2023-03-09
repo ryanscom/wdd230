@@ -153,14 +153,6 @@ form label.membershipInfo input, label.membershipInfo textarea{
   margin-bottom: 0;
 }
 
-/* #memberRadioFieldset {
-  padding-top: 0;
-}
-
-#memberInfoFieldset {
-  Margin-Bottom: 0;
-} */
-
 .submitBtnDiv {
   grid-column: 1/2
 }

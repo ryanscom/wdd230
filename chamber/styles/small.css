@@ -946,6 +946,20 @@ footer div div a:hover{
 .sourcesLink:hover{
    color: var(--extralightgreen);
 }
+/* Sources Page ********** */
+ #sourcesMain section{
+   font-family: var(--robo);
+   color: var(--lightgreen);
+   max-width: 650px;
+   width: 100%;
+   margin: 30px auto;
+   padding: 5PX;
+ }
+
+ #sourcesMain section H2, #sourcesMain section H3 {
+   color: white;
+   border-bottom: 2px solid var(--grey);
+ }
 
 /* PAGE CONTAINER ********** */
 #page-container {
@@ -958,7 +972,6 @@ footer div div a:hover{
  }
  
  /* EFFECTS ********** */
-
  .logoBox:hover{
    transform: scale(.9);
    transition: ease .3s;
