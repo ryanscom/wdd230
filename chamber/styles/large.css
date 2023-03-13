@@ -42,7 +42,7 @@ nav ul li:nth-child(5) {
 }
 
 #call-to-action {
-  height: auto;
+  /* height: auto; */
   margin: 5px 2.5px 2.5px 2.5px;
   grid-column: 2/4;
   grid-row: 1/3;
