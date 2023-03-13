@@ -372,7 +372,7 @@ nav ul li a {
  }
 
  #weather figcaption {
-   border-top: 2px solid var(--darkgrey);
+   /* border-top: 2px solid var(--darkgrey); */
    padding-top: 5px;
    margin: 0;
  }
