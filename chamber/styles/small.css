@@ -238,7 +238,7 @@ nav ul li a {
    max-width: 100%;
    height:auto;
    margin-bottom: -4px;
-   /* object-fit:cover */
+   /* object-fit:cover;//////////////////////////////////////////////////////////// */
 }
 
 #heroH3Div {
@@ -389,7 +389,6 @@ nav ul li a {
  .tempDiv {
    display: flex;
    align-items: center;
-   padding: auto;
  }
 
  .tempDiv p {
@@ -801,7 +800,6 @@ div.directorSwitch button {
    border: 2px solid #777;
    display: flex;
    flex-direction: column;
-   align-items: left;
    border-radius: 5px;
    overflow: hidden;
 }
@@ -994,6 +992,6 @@ footer div div a:hover{
 }
 
 .navText:hover{
-   transform: scale(1.2);
+   transform: scale(.9);
    transition: ease .3s;
  }
