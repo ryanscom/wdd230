@@ -711,17 +711,12 @@ div.directorSwitch button {
 .directorySwitchIcon {
    margin: 10px 5px 5px 5px;
    border-radius: 5px;
+   border: solid 3px var(--extralightgreen);
 }
 
 .grid .moreBtn, .grid .lessBtn{
    display:none;
 }
-
-
-/* .directorySwitchIcon:hover {
-   background-color: var(--green);
-   color: var(--darkgrey)
-} */
 
 .hide-detailsBtn {
    display: none;

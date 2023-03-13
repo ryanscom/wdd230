@@ -1,3 +1,5 @@
+// ChatGPT helped me figure out how to implement the more or less buttons below as well as how to add styling to the cards that have been expanded after clicking on the more button. 
+
 
 const url = 'https://ryanscom.github.io/wdd230/chamber/json/data.json';
 
