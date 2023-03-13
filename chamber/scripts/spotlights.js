@@ -1,4 +1,6 @@
- 
+ // ChatGPT helped me understand why I was getting errors with my code in this JS file.  And helped me figure out how to step logically through getting 3 random gold memebers and getting the corresponding API information to display correctly. 
+
+
 const url = 'https://ryanscom.github.io/wdd230/chamber/json/data.json';
 
 // function to get member data from json file
