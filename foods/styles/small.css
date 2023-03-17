@@ -1,0 +1,160 @@
+:root {
+    --lato:'Lato', sans-serif;
+    --robo:'Roboto', sans-serif;
+    --robo-slab:'Roboto Slab', sans-serif;
+    
+--cream: #E3EBC3ff;
+--aureolin: #FDF22Eff;
+--harvest-gold: #E9A923ff;
+--off-red-rgb: #F50000ff;
+--licorice: #22191Cff;
+--charcoal: #33566Aff;
+--slate-gray: #6D848Aff;
+--cadet-gray: #8DAFB9ff;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 4px solid rgba(233, 169, 35, 0.5);
+    padding: 5px;
+    display: block;
+    align-items: center;
+}
+
+header .imgH1Box {
+    display: flex;
+    align-items: center;
+}
+
+.imgH1Box .logo {
+    width: 90px;
+    margin-right: -22px;
+}
+
+header .imgH1Box h1 {
+    font-size: 1.2rem;
+    margin: 25px 10px 0px 0px;
+    color: var(--aureolin);
+    
+}
+
+header .navSection {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.navSection {
+    width: 100;
+    height: auto;
+}
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    padding: 0 5px 0 5px;
+  }
+  
+  nav ul li a {
+    color: var(--aureolin);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  nav ul li a:hover{
+    color: var(--harvest-gold); 
+  }
+
+  /* nav ul li a:hover{
+    transform: scale(1.2);
+    transition: ease .3s; 
+  } */
+
+nav ul li a:active{
+    color: var(--off-red-rgb);
+  }
+
+
+
+
+
+/* ******************************************** */
+.bannerBox {
+    height: 15rem;
+    overflow: hidden; 
+}
+
+.banner {
+    Width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+/* ******************************************************* */
+.socialWrapper {
+    background-color: white;
+    
+    
+}
+
+.socialBox {
+    width: 13rem;
+    text-align: center;
+    padding: 10px 10px 5px 10px;
+    background-color:rgba(0, 0, 0, 0.7);
+    border-top: 4px solid rgba(233, 169, 35, 0.5);
+    border-left: 4px solid rgba(233, 169, 35, 0.5);
+    border-right: 4px solid rgba(233, 169, 35, 0.5);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 0 auto;
+}
+
+.socialIcons {
+    width: 35px;
+    padding: 0px 2.5px 0px 2.5px; 
+}
+
+.socialIcons:hover{
+    transform: scale(1.2);
+    transition: ease .3s; 
+  }
+
+ footer{
+    background-color: var(--licorice);
+    color: var(--cream);
+    height: auto;
+    display: flex;
+    border-top: 4px solid rgba(233, 169, 35, 0.5);
+ }
+
+ .push {
+    margin-left: auto;
+ }
+
+ .imgFooterBox .logo {
+    width: 100px;
+    margin: 35px 2rem 35px 0;
+}
+ footer .footerTextBox {
+    display: block;
+    margin: auto 0;
+    padding-left: 1.5rem;
+ }
+
+ footer .footerTextBox p{
+    padding: 0;
+    margin: 0;
+ }
+ 
+ 

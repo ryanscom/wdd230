@@ -1,0 +1,27 @@
+
+@media only screen and (min-width: 37.5em) {
+    
+    header {
+        display: flex;
+        padding: 5px;
+        margin: 0px;
+    }
+
+    .imgH1Box .logo {
+        width: 50px;
+        margin-right: 0px;
+    }
+    
+      header .imgH1Box h1 {
+        font-size: 1.2rem;
+        margin: 15px 0px 0px 0px;      
+    }
+
+    header .navSection {
+        padding-right: 50px;
+        padding-bottom: 15px;
+        margin: 0px 0px 0px auto;
+        font-size: 2rem;
+    }
+    
+}
