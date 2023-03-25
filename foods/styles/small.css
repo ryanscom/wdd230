@@ -1,26 +1,24 @@
 :root {
-    --lato:'Lato', sans-serif;
-    --robo:'Roboto', sans-serif;
-    --robo-slab:'Roboto Slab', sans-serif;
-    
+    --mont: 'Montserrat', sans-serif;
+    --play: 'Playfair Display', serif;
+
 --cream: #E3EBC3ff;
 --aureolin: #FDF22Eff;
 --harvest-gold: #E9A923ff;
 --off-red-rgb: #F50000ff;
 --licorice: #22191Cff;
---charcoal: #33566Aff;
---slate-gray: #6D848Aff;
---cadet-gray: #8DAFB9ff;
+--peel: rgb(255 164 39);
 }
 
-
+/*HEADER************************************************************** */
 
 header {
+    font-family: var(--play);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     border-bottom: 4px solid rgba(233, 169, 35, 0.5);
     padding: 5px;
     display: block;
@@ -30,12 +28,16 @@ header {
 
 header .imgH1Box {
     display: flex;
-    align-items: center;
+    align-items: center; 
+    margin: auto;
+    max-width: 250px;
+   
 }
 
 .imgH1Box .logo {
     width: 90px;
-    margin-right: -22px;
+    margin-right: -5px; 
+   
 }
 
 header .imgH1Box h1 {
@@ -63,36 +65,34 @@ nav ul {
   
 nav ul li {
     display: inline-block;
-    padding: 0 5px 0 5px;
+    padding: 0 5px 10px 5px;
 }
   
+nav ul li:hover {
+    transform: scale( 1.15);
+    transition: ease .1s; 
+}
+
 nav ul li a {
     color: var(--aureolin);
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-nav ul li a:hover{
-    color: var(--harvest-gold); 
-}
-
-  /* nav ul li a:hover{
-    transform: scale(1.2);
-    transition: ease .3s; 
-  } */
-
 nav ul li a:active{
     color: var(--off-red-rgb);
 }
 
-
-
-
-
-/* ******************************************** */
+/*Banner ******************************************** */
 .bannerBox {
     height: 15rem;
-    overflow: hidden; 
+    position: relative; 
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    text-align: center;    
 }
 
 .banner {
@@ -101,16 +101,224 @@ nav ul li a:active{
     object-fit:cover;
 }
 
-/* ******************************************************* */
-.socialWrapper {
-    background-color: var(--licorice); 
+#drinksMadeSection p { 
+    font-family: var(--mont);
+    position: absolute;
+    color:var(--aureolin);
+    margin: 185px auto 10px auto;
+    text-align: center;
+    background-color: rgba(80, 0, 0, 0.8); 
+    border-top: 4px solid rgba(233, 169, 35, 0.5);
+    border-bottom: 4px solid rgba(233, 169, 35, 0.5);
+    padding: 15px 0;
+    width: 100%;
+
+ }
+
+/* Home Main ************************************************************** */
+
+ .test {
+    display:hidden;
+  }
+  
+  .shape {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .shape div {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 10s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+body {
+    font-family: var(--play);
+    background-color: rgb(255, 239, 203);
+    overflow-x: hidden;
 }
+
+main{
+    font-family: var(--mont);
+    color: var(--black);
+}
+
+.welcomeContainer{
+    margin: 10px;
+}
+
+#welcome {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 15px 15px 30px 15px;
+    border-radius: 15px;
+    background-color: rgba(30, 0, 0, 0.8); 
+    border: 4px solid rgba(233, 169, 35, 0.5);
+    color: var(--cream);
+}
+
+.actionPic {
+    float:right; 
+    margin-left: 10px; 
+    max-width: 200px;
+    height: 100%;
+    border-radius: 20px;
+    border: 4px solid rgba(233, 169, 35, 0.5);
+}
+
+.drinkLink {
+    color:var(--aureolin);
+    font-size: 20px;
+    padding-top: 15px;
+    text-decoration: none;
+}
+
+/* .drinkLink:hover {
+    color:var(--harvest-gold);  
+} */
+
+.drinkLinkContainer {
+    text-align: center;
+}
+
+.drinkLinkContainer:hover { 
+    transform: scale( 1.5);
+    transition: ease .3s; 
+}
+
+/* .drinkLinkContainer.open {
+    display: block;
+} */
+
+/* nav ul.open {
+    display: block
+ } */
+
+/* .placeMarginContainer {
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border: 4px solid rgba(233, 169, 35, 0.5);
+    margin: 30px;
+} */
+
+.placeH2 {
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(30, 0, 0, 0.8); 
+    border: 4px solid rgba(233, 169, 35, 0.5);
+    color: var(--cream);
+    padding: 15px;
+    margin: 70PX 10px 0PX 10PX ;
+}
+
+.placeCards {
+    display: block;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 10px;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.place-section{
+    border-radius: 15px;
+    padding: 10px 20px 10px 10px;
+    background-color: rgba(30, 0, 0, 0.8); 
+    border: 4px solid rgba(233, 169, 35, 0.5);
+    color: var(--cream);
+    margin-top: 10px;
+    
+}
+
+.placePic {
+    width: 100%;
+    border-radius: 15px;
+    border: 4px solid rgba(233, 169, 35, 0.5);
+}
+
+ #weatherSection {
+    text-align: center;
+    color: var(--cream);
+    height: auto;
+    margin:auto;
+    padding: 10px;
+    background-color: rgba(30, 0, 0, 0.8);
+    border-radius: 15px;
+    border: 4px solid rgba(233, 169, 35, 0.5);
+    max-width: 550px;
+ }
+
+ .margin {
+    margin: 50px 10px 10px 10px;
+ }
+
+ #forcastSection {
+    text-align: center;
+    height: auto;
+    margin: 10px 0px;
+    padding: 10px 10px 50px 10px;
+ }
+
+#forcastCards {
+    display: flex;
+    justify-content: center;
+}
+
+.forcastContainer {
+    text-align: center;
+    color: var(--cream);
+    height: auto;
+    padding: 10px;
+    background-color: rgba(30, 0, 0, 0.8);
+    border-radius: 15px;
+    border: 4px solid rgba(233, 169, 35, 0.5);
+    max-width: 550px;
+    margin: auto;
+}
+
+.forcastContainer h3, .weather h3{
+    border-bottom: 2px solid rgba(30, 0, 0, 0.8);
+    padding-bottom: 15px;
+}
+
+
+.forcastDiv {
+    padding: 5px 10px; 
+}
+
+.left { 
+    text-align: left;
+ }
+
+.hidden {
+    display: none;
+}
+
+/*Socialmedia Icon Section ******************************************************* */
 
 .socialBox {
     width: 100%;
     text-align: center;
     padding: 10px 10px 5px 10px;
-    background-color:rgba(56, 56, 56, 0.7);
+    background-color:rgb(100, 13, 13);
     border-top: 4px solid rgba(233, 169, 35, 0.5);
     margin: 0 auto;
 }
@@ -125,30 +333,34 @@ nav ul li a:active{
     transition: ease .3s; 
   }
 
+/*Footer ******************************************************************* */
 footer{
+    font-family: var(--mont);
     background-color: var(--licorice);
     color: var(--cream);
     height: auto;
     display: block;
     border-top: 4px solid rgba(233, 169, 35, 0.5);
     margin: auto;
-    /* align-items: center; */
+    padding-bottom: 3px;
 }
 
 .push {
     margin-left: auto;
 }
 
+.footerBox{
+    width: 215px;
+    margin: 50px auto;
+    text-align: center;
+    padding-right: 20px;
+    /* padding-left: -1.5rem; */
+}
+
 .imgFooterBox .logo {
     width: 100px;
     margin-top: 30px;
-    /* margin: 35px 2rem 35px 0; */
 }
-
-/* .imgFooterBox {
-    width: 100px;
-    
-} */
 
 footer .footerTextBox {
     display: block;
@@ -176,75 +388,6 @@ footer .footerTextBox p{
     border-top: solid 2px rgba(56, 56, 56, 0.7);
 }
 
-
-
-body {
-    background-color: var(--licorice);
-    overflow-x: hidden;
-}
-
-main{
-    background-color: var(--licorice);
-    color: var(--cream);
-}
-
-#actionSection { 
-   text-align: center;
-}
-
-.left { 
-    text-align: left;
- }
-
-/* .paraImage{
-    height: 100%;
-    width: 100%;
-    object-fit:cover;
-} */
-
-.parallax-container {
-    background-color: var(--licorice);
-    margin: 30px 0px;
-    
-    /* Set the height of the container to the height of the viewport */
-    overflow-x: hidden; /* Hide horizontal overflow */
-    overflow-y: hidden; 
-    z-index: 1; /* set a lower z-index value */
-}
-
-.parallax-container h2{
-    text-align: center;
-}
-  
-.parallax-section {
-    background-color: rgba(56, 56, 56, 0.7);
-    /* height: 25vh;  */
-    /* Set the height of each section to half the height of the viewport */
-    /* position: relative;  */
-    margin: 10px 0px;
-    padding: 10px;
-}
-
-.parallax-section h3 {
-    text-align: center;
-    margin: 0;
-}
-  
-.parallax-section:before {
-    position: absolute; /* Set the position to absolute */
-    z-index: -1; /* Set the z-index to -1 so the pseudo-element stays behind the content */
-}
-  
-.parallax-section h3,
-.parallax-section p {
-    /* position: absolute; Set the position of the content to absolute */
-    text-align: left;
-    /* top: 50%; Set the top position to 20% */
-    /* left: 50%; Set the left position to 20% */
-    /* transform: translate(-50%, -50%); Center the content horizontally and vertically */
-}
-
-
 .mapP {
     margin-top: 20px;
 }
@@ -258,3 +401,23 @@ main{
     transform: scale(1.2);
     transition: ease .3s; 
 }
+
+.link:hover {
+    color: var(--aureolin);
+}
+
+.link {
+    color: var(--harvest-gold);
+}
+
+/* Fresh page******************************************************* */
+
+.formContainer{
+    display:block;
+    width: 300px;
+    margin: 300px auto;
+}
+ form label, form input{
+    display: block;
+ }
+

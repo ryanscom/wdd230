@@ -1,37 +1,48 @@
 @media only screen and (min-width: 65em){
 
-
-    #indexMain { 
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: auto;
+    .forcastContainer{
+        width: 300px;
+    }
+    #weatherSection{
+        width: 300px
     }
 
-    #indexMain #actionSection{ 
-        grid-column: 2/5;
-        grid-row: 1/3;
+    #drinksMadeSection p { 
+       font-size: 20px;
+     }
+    
+    #welcome {
+        max-width: 975px; 
     }
 
-    .parallax-container {
-            height: 100vh; 
-            margin: 30px 15px 30px 0px;
-            direction: rtl; 
-            /* set the text direction to right-to-left. This moves the scroll bar to the left side*/
-            overflow-y: scroll; /* Allow vertical overflow */
-            grid-column: 1/2;
-            grid-row: 1/3;
-            
-        }
+   .placeMarginContainer {
+        border-radius: 15px;
+        background-color: rgba(30, 0, 0, 0.8); 
+        border: 4px solid rgba(233, 169, 35, 0.5);
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 
-    .parallax-section {
-        height: 50vh; /* Set the height of each section to half the height of the viewport */
-        width: 30vw;
-        padding-left: 100px;
-        /* margin-left: 50px;
-        padding: 100px; */
-      }
+    .placeH2 {
+        border: none;
+        border-radius: 0px;
+        background-color: transparent;
+        padding-bottom: 25px;
+        margin-top: 30px;
+        font-size: 30px;
+        border-bottom: 3px solid rgba(30, 0, 0, 0.8);
+    }
 
+   .placeCards {
+        display: grid;
+        padding: 10px 20px; 
+        max-width: none;
+        margin-top: 0px;
+    }
 
-   
+    .place-section{
+        border: none;
+        background-color: transparent;
+    }
 
 }

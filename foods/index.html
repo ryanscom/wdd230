@@ -11,7 +11,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -19,91 +20,147 @@
     <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
-    <Header>
-    <div class="imgH1Box">
-        <img class="logo" src="images/OrLogo.png" alt="logo" loading="lazy">
-        <h1>Bountiful Foods </h1> 
+    <div id="page-container">
+        <div id="content-wrap">
+            <Header>
+                <div class="imgH1Box">
+                    <img class="logo" src="images/OrLogo.png" alt="logo" loading="lazy">
+                    <h1>Bountiful Foods </h1> 
+                </div>
+                <section class="navSection"> 
+                    <nav>
+                        <ul>
+                        <li> <a href="index.html" class="navText">Home</a></li>
+                        <li> <a href="fresh.html" class="navText">Drinks</a></li>
+                        <li> <a href="about.html" class="navText">Who we are</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </Header>
+            
+                <div class="bannerBox">
+                    <Section id="drinksMadeSection"></Section>
+                    <img class="banner" src="images/apples2.jpg" alt="banner" loading="lazy">
+                </div>
+                
+            <main id="indexMain">
+
+                <div class="test">
+                    <div class="shape">
+                      <div><img class="logo" src="images/OrLogo.png" alt="logo" loading="lazy"></div>
+                    </div>
+                </div>
+
+                <div class="welcomeContainer">
+                    <section id="welcome">
+                        <img class="actionPic" src="images/lady-drink.jpg" alt="Lady drinking" loading="lazy">
+                        <h2>Welcome to Bountiful Foods!</h2>
+                        <p>Welcome to Bountiful Foods, where fresh produce meets delicious specialty fruit drinks! Our physical store is located in the vibrant city of Carlsbad, CA, and we're proud to offer a wide variety of locally-sourced, high-quality fruits and vegetables.
+                        </p>
+                        <p>But that's not all - we also have a fleet of food trucks that deliver our specialty fruit drinks to neighboring cities. Our drinks are made with the freshest, most flavorful fruits available, and are perfect for anyone looking for a refreshing, healthy beverage.
+                        </p>  
+                        <p>If you're ready to try one of our specialty fruit drinks for yourself, click the link below to place your order. We have a variety of flavors to choose from, each one packed with vitamins, minerals, and all the goodness you need to stay hydrated and energized.  
+                        </p>   
+                        <p>At Bountiful Foods, we're passionate about providing our customers with the freshest, most delicious produce and beverages possible. We believe that everyone deserves access to healthy, nutritious food and drinks, and we're dedicated to making that a reality.  
+                        </p>
+                        <p>So don't wait - click the link below and order your specialty fruit drink today! Your taste buds (and your body) will thank you.
+                        </p>
+                        <div class="drinkLinkContainer">
+                            <a href="fresh.html" class="drinkLink">Make a Specialty Drink! </a></li>  
+                            <!-- <a href="https://www.youtube.com/"><img class="socialIcons" src="images/icons8-youtube-50.png" alt="youtube"></a> -->
+                        </div>              
+                    </Section>
+                </div>
+                
+
+                <div class="placeContainer">
+                    <div class="placeMarginContainer">
+                        <div class="placeH2Container">
+                            <h2 class="placeH2">Places we deliver</h2>
+                        </div>
+                        <div class="placeCards">     
+                            <div class="place-section">
+                                <h3>Carlsbad</h3>
+                                <p>Carlsbad, California is a beautiful coastal city located in San Diego County. It boasts seven miles of pristine beaches, picturesque lagoons, and a mild climate, making it a popular tourist destination. Carlsbad also has a thriving economy, with many large corporations and small businesses calling it home. In addition, it offers world-class shopping, dining, and entertainment options.</p>
+                                <img class="placePic" src="images/happy-server.jpg" alt="Happy-server" loading="lazy">  
+                            </div>
+                        
+
+                            <div class="place-section">
+                                <h3>Del Mar</h3>
+                                <p>Del Mar, California is a charming coastal city located just north of Carlsbad. It is known for its stunning beaches, luxury hotels, and horse racing at the Del Mar Racetrack. Del Mar also has a vibrant downtown area filled with unique shops, restaurants, and art galleries.</p>
+                                <img class="placePic" src="images/four-drinks.jpg" alt="Four drinks" loading="lazy">
+                            </div>
+
+                            <div class="place-section">
+                                <h3>La Jolla</h3>
+                                <p>La Jolla, California is a picturesque coastal city located south of Carlsbad. It is known for its rugged coastline, beautiful beaches, and upscale shopping and dining options. La Jolla also has several cultural attractions, such as the Museum of Contemporary Art and the Birch Aquarium at Scripps. Overall, Carlsbad, Del Mar, and La Jolla offer an unbeatable combination of natural beauty, economic opportunity, and high-quality living.</p>
+                                <img class="placePic" src="images/cool-drinks.jpg" alt="Cool drinks" loading="lazy">
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="totalWeatherContainer">
+                    <div class="margin">
+                        <Section id="weatherSection" >
+                            <div class="weather">
+                                <h3>Current Weather</h3>
+                                <p>Carlsbad, CA</p>
+                                <img src="#" alt="current weather" id="weatherIcon" loading="lazy">
+                                <p id="disc"></p>
+                                <p>Temperature: <strong><span id="temp"></span></strong></p>
+                                <p>Wind Speed: <span id="windSpeed"> </span></p>
+                                <p class="chill">Wind Chill: <span id="windChill"> </span></p>
+                                <p>Humidity: <span id="humidity"></span></p>
+                            </div>    
+                        </Section>
+                    </div>
+                
+
+                    <section id="forcastSection">
+                        <div class="forcastContainer">
+                            <h3>3 Day Forecast</h3>
+                            <div id="forcastCards"></div>
+                        </div>
+                    </section>
+                </div>
+
+
+
+            </main >
+                <div class="socialWrapper">
+                        <div class="socialBox">
+                            <a href="https://www.facebook.com/"><img class="socialIcons" src="images/icons8-facebook-50.png" alt="facebook"></a>
+                            <a href="https://www.instagram.com/"><img class="socialIcons" src="images/icons8-instagram-50.png" alt="instagram"></a>
+                            <a href="https://www.youtube.com/"><img class="socialIcons" src="images/icons8-youtube-50.png" alt="youtube"></a>
+                        </div>    
+                </div>
+            </div>
+        <footer>
+            <div class="imgFooterBox ">
+                <img class="logo" src="images/OrLogo.png" alt="logo" loading="lazy">
+            </div>
+            <div class="footerBox">
+
+                <div class="footerTextBox address">
+                    <h3>&copy; <span id="date1"></span> Bountiful Foods</h3>
+                    <p>2618 El Camino Real</p>
+                    <p>Carlsbad, CA 92008 </p>
+                    <p>760.730.1123</p>
+                    <p>boutifulfoods@bestfood.org</p>
+                    <p>Location <a href="https://goo.gl/maps/wFhfVXDujCsYhrFz9"><img class="mapIcon" src="images/pin.png" alt="map pin"></a></p>
+                </div>    
+                
+                <div class="footerTextBox miscInfo">
+                    <p>Last Modification: <span id="date2"></span></p>
+                    <p><span class="visitsText">Number of Visits: </span> <span id="numberVisits"> </span></p>
+                    <p><a href="sources.html" class="link">Sources</a></p>
+                </div>    
+            </div>
+        </footer >
     </div>
-    <section class="navSection"> 
-        <nav>
-            <ul>
-            <li> <a href="index.html" class="navText">Home</a></li>
-            <li> <a href="fresh.html" class="navText">Drinks</a></li>
-            <li> <a href="about.html" class="navText">What we do</a></li>
-            </ul>
-        </nav>
-    </section>
-    </Header>
-   
-    <div class="bannerBox">
-        <img class="banner" src="images/apples2.jpg" alt="banner" loading="lazy">
-    </div>
-   
-<main id="indexMain">
-
-    <Section id="actionSection">
-        <h2>Make a drink!</h2>
-        <a href="fresh.html" class="navText">Drinks</a></li>
-        <div class="left">
-  <p>Bountiful Foods is small business specializing in organic, locally grown foods. They are physically located in Carlsbad, California, however, they have many food trucks that cover the coastal area from Los Angeles to San Diego. The company sells fruits and produce directly from the farmers in the area, but also uses some national and international suppliers. The owner-operated company caters to walk in traffic at their storefront in Carlsbad and, of course, their food trucks. They deliver and manage those orders on the phone and via the website. The mission is to provide fresh and healthy food options, including organic, made to order, fruit drinks and fruit bags, to the local population and to tourists visiting the coastal areas. The theme should support healthy eating, organic bounty, and convenience</p>
-</div>
-</Section>
-
-
-<div class="parallax-container">
-    <h2>Places we deliver</h2>
-    <div class="parallax-section">
-        <!-- <img class="paraImage" src="images/alexander-schimmeck-2zJhA9RSkys-unsplash.jpg" alt="facebook"> -->
-      <h3>Carlsbad</h3>
-      <p>Carlsbad, California is a beautiful coastal city located in San Diego County. It boasts seven miles of pristine beaches, picturesque lagoons, and a mild climate, making it a popular tourist destination. Carlsbad also has a thriving economy, with many large corporations and small businesses calling it home. In addition, it offers world-class shopping, dining, and entertainment options.</p>
-    </div>
-    <div class="parallax-section">
-        <!-- <img class="paraImage" src="images/alexander-schimmeck-2zJhA9RSkys-unsplash.jpg" alt="facebook"> -->
-      <h3>Del Mar</h3>
-      <p>Del Mar, California is a charming coastal city located just north of Carlsbad. It is known for its stunning beaches, luxury hotels, and horse racing at the Del Mar Racetrack. Del Mar also has a vibrant downtown area filled with unique shops, restaurants, and art galleries.</p>
-    </div>
-    <div class="parallax-section">
-        <!-- <img class="paraImage" src="images/alexander-schimmeck-2zJhA9RSkys-unsplash.jpg" alt="facebook"> -->
-      <h3>La Jolla</h3>
-      <p>La Jolla, California is a picturesque coastal city located south of Carlsbad. It is known for its rugged coastline, beautiful beaches, and upscale shopping and dining options. La Jolla also has several cultural attractions, such as the Museum of Contemporary Art and the Birch Aquarium at Scripps. Overall, Carlsbad, Del Mar, and La Jolla offer an unbeatable combination of natural beauty, economic opportunity, and high-quality living.</p>
-    </div>
-  </div>
-
-</main >
-
-
-
-<div class="socialWrapper">
-        <div class="socialBox">
-            <a href="https://www.facebook.com/"><img class="socialIcons" src="images/icons8-facebook-50.png" alt="facebook"></a>
-            <a href="https://www.instagram.com/"><img class="socialIcons" src="images/icons8-instagram-50.png" alt="instagram"></a>
-            <a href="https://www.youtube.com/"><img class="socialIcons" src="images/icons8-youtube-50.png" alt="youtube"></a>
-        </div>    
-</div>
-<footer>
-<div class="imgFooterBox ">
-            <img class="logo" src="images/OrLogo.png" alt="logo" loading="lazy">
-        </div>
-    <div class="footerBox">
-
-        <div class="footerTextBox address">
-            <h3>&copy; <span id="date1"></span> Bountiful Foods</h3>
-            <p>2409 Jefferson Street</p>
-            <p>Port Townsend, Washington 98368 </p>
-            <p>360.385.7869</p>
-            <p>director@porttownsendchamber.org</p>
-            <p>Location <a href="https://goo.gl/maps/B13f4uXDKDy91zgSA"><img class="mapIcon" src="images/pin.png" alt="map pin"></a></p>
-        </div>    
-        
-        <div class="footerTextBox miscInfo">
-            <p>Last Modification: <span id="date2"></span></p>
-            <p><span class="visitsText">Number of Visits: </span> <span id="numberVisits"> </span></p>
-            <p><a href="sources.html" class="sourcesLink">Sources</a></p>
-        </div>    
-    </div>
-    
-</footer >
-      
-    <script src="scripts/app.js"></script>
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/drinkCount.js"></script>
 </body>
 </html>
