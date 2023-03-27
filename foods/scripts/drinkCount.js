@@ -7,7 +7,7 @@ const drinksMade = document.getElementById('drinksMadeSection');
 // Display the count on the information card
 const drinkCard = document.createElement('p');
 // drinkCard.classList.add('info-card');
-drinkCard.innerHTML = `You have made ${specialtyDrinkCount} specialty drinks!`;
+drinkCard.innerHTML = `You have made <strong>${specialtyDrinkCount}</strong> specialty drinks!`;
 
 // Add the information card to the page
 drinksMade.appendChild(drinkCard);

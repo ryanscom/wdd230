@@ -60,38 +60,54 @@
     <div class="formContainer">
         <form id="drinkForm" method="get">
             <fieldset>
-                <legend >Make your drink! </legend>
-                <label >First Name<span>*</span> <input autofocus type="text" name="fname" placeholder="First Name" id="userName" required></label>
-                <label >Cell Phone<span>*</span> <input type="tel" name="phone" id="userPhone" placeholder="##########" required></label>
-                <label >Email<span>*</span> <input type="email" name="email" placeholder="josephSmith@email.com" id="userEmail" ></label>
-                
+                <legend id="drinkFormLegend">Make your drink! </legend>
+                <label >First Name:<span class="star">*</span> 
+                    <input 
+                    autofocus 
+                    type="text" 
+                    name="fname" 
+                    placeholder="First Name" 
+                    id="userName" 
+                    pattern="^[A-Za-z]*$"
+                    required>
+                </label>
+                <label >Cell Phone:<span class="star">*</span> 
+                    <input 
+                    type="tel" 
+                    name="phone" 
+                    id="userPhone"
+                    pattern="[0-9]{10}"
+                    placeholder="##########" 
+                    required></label>
+                <label >Email:<span class="star">*</span> 
+                    <input type="email" 
+                    name="email" 
+                    placeholder="josephSmith@email.com" 
+                    id="userEmail" >
+                </label>
                 <label >
                     <select id="fruitOne">
-                        <option selected>--Choose fruit--</option>
+                        <option selected>--- Choose a fruit! ---</option>
                     </select>
                 </label>
-                
                 <label >
                     <select id="fruitTwo">
-                        <option selected>--Choose fruit--</option>
+                        <option selected>--- Choose a fruit! ---</option>
                     </select>
                 </label>
-                
                 <label >
                     <select id="fruitThree">
-                        <option selected>--Choose fruit--</option>
+                        <option selected>--- Choose a fruit! ---</option>
                     </select>
                 </label>
                 <label >Special Instructions:</label>
                 <textarea id="userInstructions" name="instructions"></textarea>
-                
-                <button type="submit" id="submit">Get Your Drink</button>
-                <button type="reset" id="clear">Reset</button>
+                <button type="submit" id="submit">Order Your Drink!</button>
             </fieldset>
 
             <div>
                 <fieldset id="hiddenReceipt" class="hidden">
-                    <legend class="receipt">Order Details</legend>
+                    <legend class="receipt"></legend>
                     <p id="thankYou"></p>
                     <p id="firstName"></p>
                     <p id="phone"></p>
@@ -102,14 +118,16 @@
                     
                     <p id="dateOfOrder"></p>
                
-                <fieldset>
-                    <legend>Nutrition Information</legend>
+                <fieldset id="formNutritionInfo">
+                    <legend>Nutrition Information</legend> 
+                    <div class="drinkNutriDivImgContainer"><img class="nutriLogo" src="images/drinkLogo.png" alt="logo" loading="lazy"></div> 
                     <p id="drinkName"></p>
                     <p id="totalCalories" ></p>
                     <p id="totalSugar" ></p>
                     <p id="totalCarb" ></p>
                     <p id="totalFat" ></p>
-                    <p id="totalProtein" ></p>            
+                    <p id="totalProtein" ></p>
+                          
                 </fieldset>
             </div>       
         </form>
@@ -147,7 +165,6 @@
 </footer >
 </div>
 <script src="scripts/app.js"></script>
-<!-- <script src="scripts/drinkCount.js"></script> -->
 <script src="scripts/drinks.js"></script>
 </body>
 </html>

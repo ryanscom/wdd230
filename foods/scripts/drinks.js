@@ -173,8 +173,8 @@ let sumCalories = sum(selecCalories);
 let sumSugar = sum(selecSugar);
 
 // Set the inner HTML of each element to display the calculated values.
-drinkName.innerHTML = `Drink: "${selecNames.join(' ')}"`
-totalCarbs.innerHTML = `<strong>Total carbohydrates:</strong> ${sumCarbs}g`
+drinkName.innerHTML = `<strong>Drink:</strong> <span>${selecNames.join(' ')}</span>`
+totalCarbs.innerHTML = `<strong>Total carbs:</strong> ${sumCarbs}g`
 totalFat.innerHTML = `<strong>Total fat:</strong> ${sumFat}g`
 totalProtein.innerHTML = `<strong>Total protein:</strong> ${sumProtein}g`
 totalCalories.innerHTML = `<strong>Total calories:</strong> ${sumCalories}`
@@ -221,7 +221,7 @@ const drinksMade = document.getElementById('drinksMadeSection');
 const drinkCard = document.createElement('p');
 
 // drinkCard.classList.add('info-card');
-drinkCard.innerHTML = `You have made ${specialtyDrinkCount} specialty drinks!`;
+drinkCard.innerHTML = `You have made <strong>${specialtyDrinkCount}</strong> specialty drinks!`;
 
 // Add the information card to the page
 drinksMade.appendChild(drinkCard);
@@ -235,7 +235,7 @@ form.addEventListener('submit', () => {
     localStorage.setItem('specialtyDrinkCount', specialtyDrinkCount);
 
     // drinkCard.classList.add('info-card');
-    drinkCard.innerHTML = `You have made ${specialtyDrinkCount} specialty drinks!`;
+    drinkCard.innerHTML = `You have made <strong>${specialtyDrinkCount}</strong> specialty drinks!`;
 
     // Add the information card to the page
     drinksMade.appendChild(drinkCard);

@@ -393,10 +393,120 @@ footer .footerTextBox p{
 
 .formContainer{
     display:block;
-    width: 300px;
-    margin: 300px auto;
+    max-width: 400px;
+    margin: 50px auto;
 }
- form label, form input{
+
+ form label, form input, form textarea{
     display: block;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
  }
 
+ form input{
+    margin-top: 5px;
+ }
+
+ form select {
+    padding: 10px;
+    width: 273px;
+    border-radius: 5px;
+ }
+
+ form textarea {
+    margin-left: 10px;
+    border-radius: 5px;
+    height: 70px;
+ }
+
+ form legend {
+   
+    color: var(--aureolin);
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+ }
+
+ form fieldset {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 3px solid rgba(233, 169, 35, 0.5);
+ }
+
+ form button {
+    margin: 15px 0px 15px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 5px solid rgba(233, 169, 35, 0.5);
+    background-color: var(--aureolin);
+    color: rgb(103, 1, 1);
+    width: 270px;
+    font-weight: bold;
+ }
+
+ form button:hover {
+    background-color: rgba(233, 169, 35, 0.5);
+    color: var(--aureolin);
+ }
+
+ 
+/* input:required{
+    background-color: rgba(255, 247, 247, 0.5);
+ }
+ 
+input:required:valid {
+    background-color: rgba(245, 253, 241, 0.5);
+ } */
+
+ #thankYou {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--aureolin);
+    padding-top: 0;
+    margin-top: 0;
+ }
+
+
+
+#drinkForm {
+    background-color:rgba(100, 13, 13, 0.8);
+    color: var(--cream);
+    border: 4px solid rgba(233, 169, 35, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#drinkFormLegend, #hiddenReceipt {
+     border: 0;
+ }
+
+ #formNutritionInfo {
+   padding-left: 15px;
+   position: relative;
+ }
+
+ .drinkNutriDivImgContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 115px;
+    right: 15px;
+ }
+
+ .nutriLogo {
+    width: 100px;
+    float: right;
+   ;
+ }
+
+ /* #formNutritionInfo legend{
+    padding-left: 0px;
+  } */
+
+.star {
+    color: var(--aureolin);
+    padding: 0px 5px;
+    font-weight: bold;
+}
