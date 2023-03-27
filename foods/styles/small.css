@@ -414,6 +414,10 @@ footer .footerTextBox p{
     border-radius: 5px;
  }
 
+ #fruitOne{
+    margin-top: 10px; 
+ }
+
  form textarea {
     margin-left: 10px;
     border-radius: 5px;
@@ -421,7 +425,6 @@ footer .footerTextBox p{
  }
 
  form legend {
-   
     color: var(--aureolin);
     border-radius: 5px;
     padding: 10px;
@@ -436,7 +439,7 @@ footer .footerTextBox p{
  }
 
  form button {
-    margin: 15px 0px 15px 10px;
+    margin: 25px 0px 15px 10px;
     padding: 10px;
     border-radius: 5px;
     border: 5px solid rgba(233, 169, 35, 0.5);
@@ -451,7 +454,9 @@ footer .footerTextBox p{
     color: var(--aureolin);
  }
 
- 
+/* .email {
+    margin-bottom: 10px;
+} */
 /* input:required{
     background-color: rgba(255, 247, 247, 0.5);
  }
