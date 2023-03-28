@@ -53,7 +53,8 @@
 
     <div class="formContainer">
         <form id="drinkForm" method="get">
-            <fieldset>
+            <fieldset id="orderFieldset">
+               
                 <legend id="drinkFormLegend">Make your drink! </legend>
                 <label >First Name:<span class="star">*</span> 
                     <input 
@@ -96,14 +97,20 @@
                 </label>
                 <label >Special Instructions:</label>
                 <textarea id="userInstructions" name="instructions"></textarea>
-                <button type="submit" id="submit">Order Your Drink!</button>
+                <button type="submit" id="submit">Order Your Drink!</button> 
+                <!-- <div id="orderLogoContainer">
+                    <img class="orderLogo" src="images/OrLogo.png" alt="logo" loading="lazy">
+                </div> -->
             </fieldset>
 
             <div>
                 <fieldset id="hiddenReceipt" class="hidden">
                     <div id="babyPicContainter">
-                        <img class="babyPic" src="images/baby.jpg" alt="baby" loading="lazy">  
-                    </div>                    
+                        <img class="babyPic" src="images/babyCroped.jpg" alt="baby" loading="lazy">  
+                    </div>
+                    <!-- <div id="babyCropedPicContainter">
+                        <img class="babyPic" src="images/babyCroped.jpg" alt="baby" loading="lazy">  
+                    </div>                                       -->
                     <legend class="receipt"></legend>
                     <p id="thankYou"></p>
                     <p id="firstName"></p>
@@ -117,7 +124,9 @@
                
                 <fieldset id="formNutritionInfo">
                     <legend>Nutrition Information</legend> 
-                    <div class="drinkNutriDivImgContainer"><img class="nutriLogo" src="images/drinkLogo.png" alt="logo" loading="lazy"></div> 
+                    <div class="drinkNutriDivImgContainer">
+                        <img class="nutriLogo" src="images/drinkLogo.png" alt="logo" loading="lazy">
+                    </div> 
                     <p id="drinkName"></p>
                     <p id="totalCalories" ></p>
                     <p id="totalSugar" ></p>
