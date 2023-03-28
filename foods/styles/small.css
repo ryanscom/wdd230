@@ -454,16 +454,17 @@ footer .footerTextBox p{
     color: var(--aureolin);
  }
 
-/* .email {
-    margin-bottom: 10px;
-} */
-/* input:required{
-    background-color: rgba(255, 247, 247, 0.5);
- }
- 
-input:required:valid {
-    background-color: rgba(245, 253, 241, 0.5);
- } */
+#babyPicContainer {
+    max-width: 250px;
+}
+
+.babyPic {
+    width: 100%;
+    height: 100%;
+    border: 4px solid rgba(233, 169, 35, 0.5);
+    border-radius: 15px;
+    MARGIN-bottom: 30PX;
+}
 
  #thankYou {
     font-weight: bold;
@@ -506,12 +507,57 @@ input:required:valid {
    ;
  }
 
- /* #formNutritionInfo legend{
-    padding-left: 0px;
-  } */
-
 .star {
     color: var(--aureolin);
     padding: 0px 5px;
     font-weight: bold;
 }
+
+ /* About Us Page ************************************************* */
+
+ #historySection {
+    background-color: rgba(50, 0, 0, 0.8);
+    color: var(--cream);
+    border: 4px solid rgba(233, 169, 35, 0.5);
+    border-radius: 15px;
+    padding: 20px 20px 20px 15px;
+    max-width: 900px;
+    margin: 50px auto;
+ }
+
+ .jamImageContainer{
+    max-width: 600px;
+    margin: 20px auto;
+ }
+
+ .jamPic{
+    height: 100%;
+    width: 100%;
+    border: 4px solid rgba(233, 169, 35, 0.5);
+    border-radius: 5px;
+ }
+
+ #visitUsSection {
+    display: block;
+    background-color: rgba(50, 0, 0, 0.8);
+    color: var(--cream);
+    border: 4px solid rgba(233, 169, 35, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 900px;
+    margin: 50px auto;
+ }
+
+ #visitUsSection div{
+    margin: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+ }
+
+ iframe{
+    border-radius: 5px;
+    max-width: 250px;
+    max-height: 250px;
+    margin: 20px auto;
+    margin-left: 10px;
+ }

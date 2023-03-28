@@ -149,4 +149,21 @@
         padding-right: 25px;  
     }
 
+    #visitUsSection {
+        display: flex;
+        padding-top: 10px;
+     }
+
+     #visitUsSection div{
+        margin: 20px;
+        border-left: 2px solid rgba(233, 169, 35, 0.5);
+        padding-left: 20px;
+     }
+
+    iframe{
+        margin: 20px auto;
+        max-width: 300px;
+        max-height: 300px;
+     }
+
 }
