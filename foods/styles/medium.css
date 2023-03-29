@@ -37,13 +37,18 @@
         margin: 40px;
     }
 
+    #welcome{
+        padding: 30px;
+    }
+
     .actionPic {
+        max-width: 200px;
         float:right; 
         margin-left: 10px; 
     }
 
     .drinkLink {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .placeH2Container{
@@ -63,25 +68,17 @@
 
     .place-section {
         margin: 10px;
+        padding: 30px;
     }
 
     .socialBox {
-        width: 10rem;
-        padding: 5px 5px 0px 5px;
-        border-top: 2px solid rgba(233, 169, 35, 0.5);
-        border-left: 2px solid rgba(233, 169, 35, 0.5);
-        border-right: 2px solid rgba(233, 169, 35, 0.5);
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
+        width: 15rem;
+        border-top: 5px solid rgba(233, 169, 35, 0.5);
+        border-left: 15px solid rgba(233, 169, 35, 0.5);
+        border-right: 15px solid rgba(233, 169, 35, 0.5);
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%; 
     }
- 
-    .socialIcons {
-        width: 27px;
-        padding: 5px 2.5px 5px 2.5px; 
-    }
-
-
-
 
     .totalWeatherContainer{
         margin-top: 50px;
@@ -132,6 +129,10 @@
         text-align: left;
     }
 
+    footer .footerTextBox {
+        padding-left: 1.5rem;
+    }
+
     .address {
         grid-column: 2/3;
         grid-row: 1/2;
@@ -160,8 +161,14 @@
         margin-left: auto;
      }
 
+     #visitUsSection h3{
+        margin-top: 35px;
+     }
+
     iframe{
-        margin: 20px auto;
+
+        max-width: 270px;
+        max-height: 270px;
      }
 
 }

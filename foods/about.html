@@ -20,8 +20,7 @@
     <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
-    <div id="page-container">
-        <div id="content-wrap">
+  
             <Header>
                 <div class="imgH1Box">
                     <img class="logo" src="images/OrLogo.png" alt="logo" loading="lazy">
@@ -68,18 +67,20 @@
                 </Section>
 
                 <section id="visitUsSection">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1172.8041576549629!2d-117.25567978380154!3d33.129367611815!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDA3JzQ1LjMiTiAxMTfCsDE1JzE1LjUiVw!5e0!3m2!1sen!2sus!4v1679961655707!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   
                     <div class="visitUsTextContainer">
                         <h3>Visit Us</h3>
                         <h4>Bountiful Foods</h4>
-                        <p>2618 El Camino Real<br>
+                        <p id="visitAdress">2618 El Camino Real<br>
                         Carlsbad, CA 92008 <br>
                         760.730.1123<br>
                         boutifulfoods@bestfood.org</p>
                        
                         <P>Monday - Thursday: 9:00 a.m. to 4:30 p.m.<br>Friday: By Appointment Only</P> 
                     </div>
-                    
+                    <div class="iframeContainer">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1172.8041576549629!2d-117.25567978380154!3d33.129367611815!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDA3JzQ1LjMiTiAxMTfCsDE1JzE1LjUiVw!5e0!3m2!1sen!2sus!4v1679961655707!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </section>
 
             </main >
@@ -90,7 +91,7 @@
                             <a href="https://www.youtube.com/"><img class="socialIcons" src="images/icons8-youtube-50.png" alt="youtube"></a>
                         </div>    
                 </div>
-            </div>
+       
         <footer>
             <div class="imgFooterBox ">
                 <img class="logo" src="images/OrLogo.png" alt="logo" loading="lazy">
@@ -113,7 +114,7 @@
                 </div>    
             </div>
         </footer >
-    </div>
+ 
         <script src="scripts/weather.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/drinkCount.js"></script>
