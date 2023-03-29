@@ -35,11 +35,14 @@ header .imgH1Box {
     align-items: center; 
     margin: auto;
     max-width: 250px;
+    /* border-bottom: 2px solid rgba(233, 169, 35, 0.5); */
+    padding-bottom: 10px;
 }
 
 .imgH1Box .logo {
     width: 90px;
     margin-right: -5px; 
+    
 }
 
 header .imgH1Box h1 {
@@ -49,6 +52,7 @@ header .imgH1Box h1 {
 }
 
 header .navSection {
+    border-top: 2px solid rgba(233, 169, 35, 0.5);
     padding-top: 15px;
     text-align: center;
 }
