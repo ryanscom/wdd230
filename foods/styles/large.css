@@ -91,6 +91,8 @@
         width: 190px;
      }
 
-
+     #sourcesMain section{
+        padding: 30px;
+      }
 
 }
