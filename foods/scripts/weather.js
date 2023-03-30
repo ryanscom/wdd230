@@ -70,8 +70,6 @@ function displayWeather(weatherData) {
         const currWindChill = windChillFahr(temp, speed);
         windChill.innerHTML = `${currWindChill}&deg;F`;
     } else {
-        // windChill.innerHTML = 'N/A';
-        // windChill.setAttribute('class', 'hidden')
         const chill = document.querySelector('.chill')
         chill.setAttribute('class', 'hidden')
     }
@@ -102,45 +100,45 @@ async function forecastApi() {
 
 forecastApi()
 
-// Display the three day forecast
-const displayForecast = (forecastData) => {
-    const cards = document.querySelector('#forcastCards');
-    if (typeof forecastData.list === 'object' && forecastData.list !== null && Array.isArray(forecastData.list)) {
-        for (let i = 0; i < 24; i++) {
-            let getList = forecastData.list[i]
-            if (getList.dt_txt.slice(-8) == "18:00:00") {
-                let card = document.createElement('div')
-                let theDate = document.createElement('p')
-                let temperature = document.createElement('p')
-                let condition = document.createElement('p')
-                let icons = document.createElement('img')
-                let iconsrc = `https://openweathermap.org/img/wn/${getList.weather[0].icon}.png`
+// // Display the three day forecast
+// const displayForecast = (forecastData) => {
+//     const cards = document.querySelector('#forcastCards');
+//     if (typeof forecastData.list === 'object' && forecastData.list !== null && Array.isArray(forecastData.list)) {
+//         for (let i = 0; i < 24; i++) {
+//             let getList = forecastData.list[i]
+//             if (getList.dt_txt.slice(-8) == "18:00:00") {
+//                 let card = document.createElement('div')
+//                 let theDate = document.createElement('p')
+//                 let temperature = document.createElement('p')
+//                 let condition = document.createElement('p')
+//                 let icons = document.createElement('img')
+//                 let iconsrc = `https://openweathermap.org/img/wn/${getList.weather[0].icon}.png`
 
-                let forecastDate = new Date(getList.dt * 1000);
-                theDate.textContent = formatDate(forecastDate)
+//                 let forecastDate = new Date(getList.dt * 1000);
+//                 theDate.textContent = formatDate(forecastDate)
 
-                temperature.textContent = `${(getList.main.temp).toFixed(0)}°F`
-                condition.textContent = capitalize(getList.weather[0].description)
-                icons.setAttribute('src', iconsrc);
-                icons.setAttribute('alt', condition)
-                icons.setAttribute('width', '50')
-                icons.setAttribute('loading', 'lazy')
+//                 temperature.textContent = `${(getList.main.temp).toFixed(0)}°F`
+//                 condition.textContent = capitalize(getList.weather[0].description)
+//                 icons.setAttribute('src', iconsrc);
+//                 icons.setAttribute('alt', condition)
+//                 icons.setAttribute('width', '50')
+//                 icons.setAttribute('loading', 'lazy')
 
-                card.setAttribute('class', 'forcastDiv')
-                theDate.setAttribute('class', 'forcast')
-                temperature.setAttribute('class', 'forcast')
-                condition.setAttribute('class', 'forcast')
-                icons.setAttribute('class', 'forcast')
+//                 card.setAttribute('class', 'forcastDiv')
+//                 theDate.setAttribute('class', 'forcast')
+//                 temperature.setAttribute('class', 'forcast')
+//                 condition.setAttribute('class', 'forcast')
+//                 icons.setAttribute('class', 'forcast')
              
-                card.appendChild(theDate)
-                card.appendChild(icons)
-                card.appendChild(temperature)
-                card.appendChild(condition)
-                cards.appendChild(card)
-            }
-        }
-    }
-}
+//                 card.appendChild(theDate)
+//                 card.appendChild(icons)
+//                 card.appendChild(temperature)
+//                 card.appendChild(condition)
+//                 cards.appendChild(card)
+//             }
+//         }
+//     }
+// }
 
 
 
