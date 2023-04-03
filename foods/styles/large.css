@@ -10,6 +10,23 @@
     #drinksMadeSection p { 
        font-size: 20px;
      }
+
+     
+
+     @keyframes move {
+        0% {
+          transform: translate(0, 0);
+        }
+        50% {
+          transform: translate(60vw, 50vh);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+
+
+
     
     #welcome {
         max-width: 975px; 

@@ -1,5 +1,4 @@
 
-
 // Define the URL where the data is located
 const url = "https://brotherblazzard.github.io/canvas-content/fruit.json"
 
@@ -20,194 +19,149 @@ async function getDrinkApi() {
 }
 
 // // Call the getDrinkApi function to retrieve the data
-// getDrinkApi();
+getDrinkApi();
 
-// // This function takes an array of fruit information and displays it on the page.
-// const displayInfo = (information) => {
-//     // Get the three select elements on the page by their IDs.
-//     const fruitOne = document.querySelector('#fruitOne');
-//     const fruitTwo = document.querySelector('#fruitTwo');
-//     const fruitThree = document.querySelector('#fruitThree');
 
-//     // Loop through each fruit in the array and create a set of options for it in each select element.
-//     information.forEach((info) => {
-//         createOptions(info, fruitOne, fruitTwo, fruitThree);
-//     });
+// This function receives an array of objects representing fruits and adds options to the fruit select inputs in the HTML.
+const displayInfo = (information) => {
 
-//     // Add an event listener to the form to update the information displayed on the page when the form is submitted.
-//     const form = document.getElementById('drinkForm');
-//     form.addEventListener('submit', function(event) {
-//         // Prevent the form from submitting and refreshing the page.
-//         event.preventDefault();
-//         // Update the information displayed on the page.
-//         updateInfo();
-//         // Get the selected options from each select element and add them to an array.
-//         const selectElements = document.querySelectorAll("select");
-//         const selectedOptions = [];
-//         for (let i = 0; i < selectElements.length; i++) {
-//             const selectElement = selectElements[i];
-//             const selectedOption = selectElement.options[selectElement.selectedIndex].value;
-//             selectedOptions.push(selectedOption);
-//         }
-//          // Display the selected fruits on the page.
-//         displaySelectedFruits(selectedOptions, information);
-//          // Scroll to the bottom of the page.
-//         scrollToBottom();
-//     });
-// };
 
-// // This function creates a set of options for a fruit in each of the three select elements.
-// const createOptions = (info, fruitOne, fruitTwo, fruitThree) => {
-//     // Create three new option elements for the fruit.
-//     const fruitOneElement = document.createElement('option');
-//     const fruitTwoElement = document.createElement('option');
-//     const fruitThreeElement = document.createElement('option');
-
-//     // Set the text content and value attributes of each option element.
-//     fruitOneElement.textContent = info.name;
-//     fruitTwoElement.textContent = info.name;
-//     fruitThreeElement.textContent = info.name;
-//     fruitOneElement.setAttribute('value', info.name);
-//     fruitTwoElement.setAttribute('value', info.name);
-//     fruitThreeElement.setAttribute('value', info.name);
-
-//     // Create a new option group for each select element.
-//     const fruitOneGroup = document.createElement('option');
-//     const fruitTwoGroup = document.createElement('option');
-//     const fruitThreeGroup = document.createElement('option');
-
-//     // append the option elements to the group element
-//     fruitOneGroup.appendChild(fruitOneElement);
-//     fruitTwoGroup.appendChild(fruitTwoElement);
-//     fruitThreeGroup.append(fruitThreeElement);
-    
-//     // append the group element to the select elements.
-//     fruitOne.appendChild(fruitOneGroup);
-//     fruitTwo.appendChild(fruitTwoGroup);
-//     fruitThree.appendChild(fruitThreeGroup);
-// };
-
-// const updateInfo = () => {
-    
-//     const now = Date.now();
-//     const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
-
-//     const thankYou = document.getElementById('thankYou');
-//     const userName = document.getElementById('userName').value;
-//     const userEmail = document.getElementById('userEmail').value;
-//     const userInstructions = document.getElementById('userInstructions').value;
-//     const userPhone = document.getElementById('userPhone').value;
-
-//     const name = document.getElementById('firstName')
-//     const phone = document.getElementById('phone');
-//     const email = document.getElementById('email');
-//     const message = document.getElementById('specialInstructions');
-//     const theOrderDate = document.getElementById('dateOfOrder');
-
-//     thankYou.innerHTML = `<strong>Thank you!</strong>`
-//     name.innerHTML = `<strong>Name:</strong> ${userName}`
-//     phone.innerHTML = `<strong>Phone:</strong> ${userPhone}`
-//     email.innerHTML = `<strong>Email:</strong> ${userEmail}`
-//     message.innerHTML = `<strong>Instructions:</strong> ${userInstructions}`
-//     theOrderDate.innerHTML = `<strong>Order placed on:</strong> ${fulldate}`
-// };
-// const displaySelectedFruits = (selectedOptions, information) => {
-//     // Create empty arrays to store the nutrition information of the selected fruits.
-//     const selectedFruits = [];
-//     const selecCarbs = []
-//     const selecFat = []
-//     const selecProtein = []
-//     const selecCalories = []
-//     const selecSugar = []
-//     const selecNames = []
-
-//     // Get the drink choice element from the DOM.
-//     const drinkChoice = document.getElementById('drinkName');
-//     // Loop through the array of selected fruit names.
-//     for (let i = 0; i < selectedOptions.length; i++) {
-//         // Find the fruit object with the corresponding name in the information array, and push it to the selectedFruits array.
-//         const selectedFruit = information.find(fruit => fruit.name === selectedOptions[i]);
-//         selectedFruits.push(selectedFruit);
-//     };
-    
-//     // Loop through the array of selected fruit objects.
-//     for (let j = 0; j < selectedFruits.length; j++) {
-//         // Get the nutrition information of the current fruit object.
-//         const selectedFruit = selectedFruits[j];
-//         const nutrition = selectedFruit.nutritions;
-
-//         // Extract the specific nutrition information from the fruit object.
-//         const fruitsName = selectedFruit.name
-//         const carbs = nutrition.carbohydrates
-//         const fat = nutrition.fat
-//         const protein = nutrition.protein
-//         const calorie = nutrition.calories
-//         const sugar = nutrition.sugar
+    // This array destructuring assigns the first three elements of an array of three strings containing selectors for the fruit select inputs in the HTML.
+    const [fruitOne, fruitTwo, fruitThree] = ["#fruitOne", "#fruitTwo", "#fruitThree"]
+        .map(id => document.querySelector(id));
         
-//         // Get the result element from the DOM and clear its contents.
-//         const result = document.getElementById('result');
-//         result.innerHTML = ''
+    const fruitDrinkName = `${fruitOne.textContent}, ${fruitTwo.textContent}, ${fruitThree.textContent}`
 
-//         // Push the specific nutrition information to their respective arrays.
-//         selecNames.push(fruitsName)
-//         selecCarbs.push(carbs)
-//         selecSugar.push(sugar)
-//         selecFat.push(fat)
-//         selecProtein.push(protein)
-//         selecCalories.push(calorie)
+    // This function creates option elements in each of the fruit select inputs with the name and value of each fruit object in the `information` array.
+    const createOptions = (info) => {
+        [fruitOne, fruitTwo, fruitThree].forEach(fruit => {
+            const option = document.createElement('option');
+            option.textContent = info.name;
+            option.setAttribute('value', info.name);
+            option.setAttribute('data-name', info.name); // Add a data-name attribute to each option with the name of the fruit object
+            const group = document.createElement('optgroup');
+            group.appendChild(option);
+            fruit.appendChild(group);
+        });
+    };
+
+    // This method call iterates over each fruit object in the `information` array and calls the `createOptions` function on it.
+    information.forEach(createOptions);
+
+    // This line assigns the form element with the id `drinkForm` to the variable `form`.
+    const form = document.getElementById('drinkForm');
+
+    // This event listener is added to the `form` element to prevent it from submitting when the submit button is clicked.
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const selectElements = document.querySelectorAll("select");
+        // Get an array of the selected option elements, not just their values
+        const selectedOptions = Array.from(selectElements, selectElement => selectElement.options[selectElement.selectedIndex]); 
+
+        // Use the map and includes methods to find the fruit objects whose names match the selected options
+        const selectedFruits = information.filter(fruit => selectedOptions.map(opt => opt.getAttribute('value')).includes(fruit.name)); 
+
+        // Extract the data-name attribute for each selected option
+        const selectedFruitNames = selectedOptions.map(opt => opt.getAttribute('data-name')); 
         
-//     }
+        // Display the selected fruit names
+        const selectedFruitNamesText = selectedFruitNames.join(', ');
+     
+        
+        // This line creates an array of objects containing nutrition information for each selected fruit object.
+        const selectedFruitsInfo = selectedFruits.map(fruit => {
+            const nutritions = fruit.nutritions;
+            const [name, carbs, fat, protein, calories, sugar] = [fruit.name, nutritions.carbohydrates, nutritions.fat, nutritions.protein, nutritions.calories, nutritions.sugar];
+            return {name, carbs, fat, protein, sugar, calories};
+        });
 
-// // Get elements by their IDs and store them in variables.
-// const totalCarbs = document.getElementById('totalCarb');   
-// const totalFat = document.getElementById('totalFat');
-// const totalProtein = document.getElementById('totalProtein');
-// const totalCalories = document.getElementById('totalCalories');
-// const totalSugar = document.getElementById('totalSugar');
+        // This line selects the element with the id `result` and clears its contents.
+        const result = document.getElementById('result');
+        result.innerHTML = '';
 
-// // Calculate the sum of selected elements.
-// let sumCarbs = sum(selecCarbs);
-// let sumFat = sum(selecFat);
-// let sumProtein = sum(selecProtein);
-// let sumCalories = sum(selecCalories);
-// let sumSugar = sum(selecSugar);
+        // This line initializes an array of zeros with the same length as the nutrition item labels.
+        const totalValues = [0, 0, 0, 0, 0];
 
-// // Set the inner HTML of each element to display the calculated values.
-// drinkName.innerHTML = `<strong>Drink:</strong> <span>${selecNames.join(' ')}</span>`
-// totalCarbs.innerHTML = `<strong>Total carbs:</strong> ${sumCarbs}g`
-// totalFat.innerHTML = `<strong>Total fat:</strong> ${sumFat}g`
-// totalProtein.innerHTML = `<strong>Total protein:</strong> ${sumProtein}g`
-// totalCalories.innerHTML = `<strong>Total calories:</strong> ${sumCalories}`
-// totalSugar.innerHTML = `<strong>Total sugar:</strong> ${sumSugar}g`            
-   
-// Make the hidden receipt viewable
-// select element we want to remove the hidden class from
-const myElement = document.querySelector('#hiddenReceipt');
+        // This method call iterates over each selected fruit object and for each one, adds its nutrition information to `totalValues` and creates HTML elements to display the nutrition information.
+        selectedFruitsInfo.forEach(({name, carbs, fat, protein, calories, sugar}) => {
+            const nutritionItems = [
+                {label: 'Total Carbohydrates', value: carbs},
+                {label: 'Total Fat', value: fat},
+                {label: 'Total Protein', value: protein},
+                {label: 'Total Calories', value: calories},
+                {label: 'Total Sugar', value: sugar},
+            ];
+        
+            // Loop through each item in the nutrition list and add up the values
+            nutritionItems.forEach(({label, value}, index) => {
+                totalValues[index] += value;
+            });
+        });
 
-// Remove the "hidden" class from the element
-myElement.classList.remove('hidden');
-}
+        const nutritionLabels = ['Total Carbohydrates', 'Total Fat', 'Total Protein', 'Total Calories', 'Total Sugar'];
 
-// A function that sums up the values in an array.
-function sum(selection) {
-    let num = 0;
-    for (let i = 0; i < selection.length; i++) {
-      num += selection[i];
-    }
-    return num.toFixed(1);
-  }
+        // Loop through the nutrition items and create a new list item for each one, using the total value from the totalValues array
+        nutritionLabels.forEach((label, index) => {
+            const item = document.createElement('li');
+            item.setAttribute('data-nutrition', label);
+            item.setAttribute('data-value', totalValues[index].toFixed(2));
+            item.textContent = `${label}: ${totalValues[index].toFixed(2)}`;
+            result.appendChild(item);
+        });
+
+       // Get the current date and format it using the "full" date style in US English locale
+        const now = new Date();
+        const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+
+        // Get the elements with the relevant IDs and retrieve their values
+        const thankYou = document.getElementById('thankYou');
+        const userName = document.getElementById('userName').value;
+        const userEmail = document.getElementById('userEmail').value;
+        const userInstructions = document.getElementById('userInstructions').value;
+        const userPhone = document.getElementById('userPhone').value;
+
+        // Get the elements where the data is to be displayed
+        const name = document.getElementById('firstName');
+        const phone = document.getElementById('phone');
+        const email = document.getElementById('email');
+        const message = document.getElementById('specialInstructions');
+        const drinkName = document.getElementById('drinkName');
+        const theOrderDate = document.getElementById('dateOfOrder');
+
+        // Display the relevant information in the corresponding HTML elements
+        thankYou.innerHTML = `<strong>Thank you!</strong>`
+        name.innerHTML = `<strong>Name:</strong> ${userName}`
+        phone.innerHTML = `<strong>Phone:</strong> ${userPhone}`
+        email.innerHTML = `<strong>Email:</strong> ${userEmail}`
+        message.innerHTML = `<strong>Instructions:</strong> ${userInstructions}`
+        drinkName.innerHTML = `<strong>Drink:</strong> ${selectedFruitNamesText}`
+        theOrderDate.innerHTML = `<strong>Order placed on:</strong> ${fulldate}`
+
+        // Scroll to the footer section of the page with a smooth scrolling effect
+        const footer = document.querySelector('footer');
+        footer.scrollIntoView({behavior: 'smooth'});
+        
+
+        // Make the hidden receipt viewable
+        // select element we want to remove the hidden class from
+        const myElement = document.querySelector('#hiddenReceipt');
+
+        // Remove the "hidden" class from the element
+        myElement.classList.remove('hidden');
+    });
+};
+
 
 // A function that scrolls the window to the bottom of the page.
-const scrollToBottom = function() {
+const scrollIntoView = function() {
     const element = document.querySelector('.receipt')
     const position = element.offsetTop
     window.scrollTo({
         behavior: 'smooth',
-        top: position
-        
+        top: position   
     });
     return position
-
 }
 
 

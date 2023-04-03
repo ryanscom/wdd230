@@ -100,49 +100,56 @@ async function forecastApi() {
 
 forecastApi()
 
-// // Display the three day forecast
-// const displayForecast = (forecastData) => {
-//     const cards = document.querySelector('#forcastCards');
-//     if (typeof forecastData.list === 'object' && forecastData.list !== null && Array.isArray(forecastData.list)) {
-//         for (let i = 0; i < 24; i++) {
-//             let getList = forecastData.list[i]
-//             if (getList.dt_txt.slice(-8) == "18:00:00") {
-//                 let card = document.createElement('div')
-//                 let theDate = document.createElement('p')
-//                 let temperature = document.createElement('p')
-//                 let condition = document.createElement('p')
-//                 let icons = document.createElement('img')
-//                 let iconsrc = `https://openweathermap.org/img/wn/${getList.weather[0].icon}.png`
+const displayForecast = (forecastData) => {
+    // Get the element that we'll be appending the forecast cards to
+    const cards = document.querySelector('#forcastCards');
+  
+    // Filter the list to only include items with a time of 12:00:00, and limit to the first 3 items
+    const relevantListItems = forecastData.list.filter((item) => {
+      return item.dt_txt.slice(-8) === "12:00:00";
+    }).slice(0, 3);
+  
+    // Loop through the relevant list items and create a card for each one
+    relevantListItems.forEach((item) => {
+      // Create a div to hold the card contents
+      const card = document.createElement('div');
+      card.classList.add('forcastDiv');
+  
+      // Create a paragraph for the date and add it to the card
+      const theDate = document.createElement('p');
+      theDate.classList.add('forcast');
+      const forecastDate = new Date(item.dt * 1000);
+      theDate.textContent = formatDate(forecastDate);
+      card.appendChild(theDate);
+  
+      // Create an image for the weather icon and add it to the card
+      const icons = document.createElement('img');
+      icons.classList.add('forcast');
+      const iconsrc = `https://openweathermap.org/img/wn/${item.weather[0].icon}.png`;
+      icons.setAttribute('src', iconsrc);
+      icons.setAttribute('alt', capitalize(item.weather[0].description));
+      icons.setAttribute('width', '50');
+      icons.setAttribute('loading', 'lazy');
+      card.appendChild(icons);
+  
+      // Create a paragraph for the temperature and add it to the card
+      const temperature = document.createElement('p');
+      temperature.classList.add('forcast');
+      temperature.textContent = `${item.main.temp.toFixed(0)}°F`;
+      card.appendChild(temperature);
+  
+      // Create a paragraph for the weather condition and add it to the card
+      const condition = document.createElement('p');
+      condition.classList.add('forcast');
+      condition.textContent = capitalize(item.weather[0].description);
+      card.appendChild(condition);
+  
+      // Append the completed card to the parent element
+      cards.appendChild(card);
+    });
+  };
 
-//                 let forecastDate = new Date(getList.dt * 1000);
-//                 theDate.textContent = formatDate(forecastDate)
 
-//                 temperature.textContent = `${(getList.main.temp).toFixed(0)}°F`
-//                 condition.textContent = capitalize(getList.weather[0].description)
-//                 icons.setAttribute('src', iconsrc);
-//                 icons.setAttribute('alt', condition)
-//                 icons.setAttribute('width', '50')
-//                 icons.setAttribute('loading', 'lazy')
-
-//                 card.setAttribute('class', 'forcastDiv')
-//                 theDate.setAttribute('class', 'forcast')
-//                 temperature.setAttribute('class', 'forcast')
-//                 condition.setAttribute('class', 'forcast')
-//                 icons.setAttribute('class', 'forcast')
-             
-//                 card.appendChild(theDate)
-//                 card.appendChild(icons)
-//                 card.appendChild(temperature)
-//                 card.appendChild(condition)
-//                 cards.appendChild(card)
-//             }
-//         }
-//     }
-// }
-
-
-
- 
   
 
 
