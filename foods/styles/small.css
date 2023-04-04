@@ -428,7 +428,10 @@ footer .footerTextBox p{
     width: 250px;
     border-radius: 5px;
     z-index: 5;
+ }
 
+ form legend h2 {
+    font-size: 20px;
  }
 
  form input{
@@ -447,9 +450,13 @@ footer .footerTextBox p{
  }
 
  form textarea {
-    margin-left: 10px;
+    /* margin-left: 5px; */
     border-radius: 5px;
     height: 70px;
+ }
+
+ form textarea{
+    margin-top: 10px;
  }
 
  form legend {

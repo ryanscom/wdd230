@@ -30,20 +30,33 @@ const displayInfo = (information) => {
     const [fruitOne, fruitTwo, fruitThree] = ["#fruitOne", "#fruitTwo", "#fruitThree"]
         .map(id => document.querySelector(id));
         
-    const fruitDrinkName = `${fruitOne.textContent}, ${fruitTwo.textContent}, ${fruitThree.textContent}`
 
     // This function creates option elements in each of the fruit select inputs with the name and value of each fruit object in the `information` array.
+
     const createOptions = (info) => {
         [fruitOne, fruitTwo, fruitThree].forEach(fruit => {
-            const option = document.createElement('option');
-            option.textContent = info.name;
-            option.setAttribute('value', info.name);
-            option.setAttribute('data-name', info.name); // Add a data-name attribute to each option with the name of the fruit object
-            const group = document.createElement('optgroup');
-            group.appendChild(option);
-            fruit.appendChild(group);
+          const option = document.createElement('option');
+          option.textContent = info.name;
+          option.setAttribute('value', info.name);
+          option.setAttribute('data-name', info.name); // Add a data-name attribute to each option with the name of the fruit object
+          fruit.appendChild(option);
         });
-    };
+      };
+
+
+
+
+    // const createOptions = (info) => {
+    //     [fruitOne, fruitTwo, fruitThree].forEach(fruit => {
+    //         const option = document.createElement('option');
+    //         option.textContent = info.name;
+    //         option.setAttribute('value', info.name);
+    //         option.setAttribute('data-name', info.name); // Add a data-name attribute to each option with the name of the fruit object
+    //         const group = document.createElement('optgroup');
+    //         group.appendChild(option);
+    //         fruit.appendChild(group);
+    //     });
+    // };
 
     // This method call iterates over each fruit object in the `information` array and calls the `createOptions` function on it.
     information.forEach(createOptions);
