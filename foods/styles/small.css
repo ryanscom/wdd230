@@ -36,7 +36,6 @@ header .imgH1Box {
     align-items: center; 
     margin: auto;
     max-width: 250px;
-    /* border-bottom: 2px solid rgba(233, 169, 35, 0.5); */
     padding-bottom: 10px;
 }
 
@@ -112,18 +111,17 @@ nav ul li a:active{
 
 /* Home Main ************************************************************** */
   
-  .shape {
+  .shape1 {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* overflow: hidden; */
     z-index: -1;
     animation: move 10s linear infinite;
   }
   
-  .shape div {
+  .shape1 div {
     position: absolute;
     width: 900px;
     height: 500px;
@@ -132,23 +130,41 @@ nav ul li a:active{
     margin-top: 200px;
     margin-left: 300px;
     /* margin-bottom: 500px; */
-    transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(50%, 50%) rotate(0deg);
     animation: rotate 10s linear infinite;
   }
+
+  .shape2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: move 10s linear infinite;
+  }
   
-  /* @keyframes move {
-    0% {
-      transform: translate(0, 0);
-    }
-    50% {
-      transform: translate(60vw, 50vh);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  } */
+  .shape2 div {
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%) rotate(-10deg);
+    animation: rotate1 15s linear infinite;
+  }
+
   
   @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(-360deg);
+    }
+  }
+
+  @keyframes rotate1 {
     0% {
       transform: translate(-50%, -50%) rotate(0deg);
     }
@@ -450,7 +466,6 @@ footer .footerTextBox p{
  }
 
  form textarea {
-    /* margin-left: 5px; */
     border-radius: 5px;
     height: 70px;
  }
@@ -527,20 +542,6 @@ footer .footerTextBox p{
    padding-left: 15px;
    position: relative;
  }
-
- /* .drinkNutriDivImgContainer {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-   
- }
-
- .nutriLogo {
-    width: 100px;
-    float: right; 
-    top: 515px;
-    right: 150px;
- } */
 
 .star {
     color: var(--aureolin);

@@ -11,9 +11,20 @@
        font-size: 20px;
      }
 
+     .shape1 div {
+
+        /* top: 50%;
+        left: 50%; */
+        margin-top: 500px;
+        margin-left: 500px;
+       
+      }
+
+
+
      
 
-     @keyframes move {
+     /* @keyframes move {
         0% {
           transform: translate(0, 0);
         }
@@ -23,7 +34,7 @@
         100% {
           transform: translate(0, 0);
         }
-      }
+      } */
 
 
 
